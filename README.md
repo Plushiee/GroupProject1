@@ -1,10 +1,9 @@
-
 <a name="readme-top"></a>
 
 <br />
 <div align="center">
-  <a href="https://www.gamelab.id/img/Logo_GameLab_Landscape_White.png?v=3.10?v=3.1?v=1.">
-    <img src="https://www.gamelab.id/img/Logo_GameLab_Landscape_White.png?v=3.10?v=3.1?v=1." alt="Logo" width="80" height="80">
+  <a href="https://www.gamelab.id/">
+    <img src="https://media.discordapp.net/attachments/761117235183091712/1153584415532916756/image.png?width=828&height=220" alt="Logo">
   </a>
 
   <h3 align="center">Group Project Kelompok 1 MSIB 5 Gamelab</h3>
