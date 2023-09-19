@@ -6,10 +6,9 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://www.gamelab.id/img/Logo_GameLab_Landscape_White.png?v=3.10?v=3.1?v=1.">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -59,7 +58,7 @@ Bahasa pemrograman yang digunakan :
 
 - [x] Pre-Test
 - [ ] Bootstrap
-    - [ ] Tugas Praktik # 1
+    - [x] Tugas Praktik # 1
     - [ ] Tugas Praktik # 2
     - [ ] Tugas Praktik # 3
     - [ ] Tugas Praktik # 4
