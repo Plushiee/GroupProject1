@@ -86,7 +86,7 @@ Trainer Gamelab.ID :
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 
-[Sass-lang]: https://img.shields.io/badge/SASS-d3679f?style=for-the-badge&logo=sass&logoColor=white
+[Sass-lang.com]: https://img.shields.io/badge/SASS-d3679f?style=for-the-badge&logo=sass&logoColor=white
 [Sass-url]: https://sass-lang.com/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
 [Laravel-url]: https://laravel.com
