@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://www.gamelab.id/">
-    <img src="https://media.discordapp.net/attachments/761117235183091712/1153584415532916756/image.png?width=828&height=220" alt="Logo">
+    <img src="https://media.discordapp.net/attachments/761117235183091712/1153584415532916756/image.png?width=828&height=220" alt="Logo" width = "100px">
   </a>
 
   <h3 align="center">Group Project Kelompok 1 MSIB 5 Gamelab</h3>
