@@ -51,7 +51,7 @@ Bahasa pemrograman yang digunakan :
 - [x] Pre-Test
 - [ ] Bootstrap
     - [x] Tugas Praktik # 1
-    - [ ] Tugas Praktik # 2
+    - [x] Tugas Praktik # 2
     - [ ] Tugas Praktik # 3
     - [ ] Tugas Praktik # 4
     - [ ] Tugas Praktik # 5
