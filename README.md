@@ -77,15 +77,11 @@ Trainer Gamelab.ID :
 
 1. Fork Project Ini
 2. Buat Branch Branch Anda (`git checkout -b main/<nama anda>`)
-3. Commit your Changes (`git commit -m 'Add .'`)
-4. Push to the Branch (`git push origin main/<nama anda>`)
-5. Open a Pull Request
+3. Commit perubahab Anda (`git commit -m 'Add .'`)
+4. Push ke Dalam Branch Anda (`git push origin main/<nama anda>`)
+5. Ajukan Pull Request Untuk Rebase Main 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
 
 [Sass-lang.com]: https://img.shields.io/badge/SASS-d3679f?style=for-the-badge&logo=sass&logoColor=white
 [Sass-url]: https://sass-lang.com/
