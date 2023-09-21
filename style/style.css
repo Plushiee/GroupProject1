@@ -13,7 +13,7 @@
 .navbar-width {
     width: 75%;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .bg-color {
@@ -53,4 +53,21 @@ h5 {
     font-weight: bold;
     font-size: 22px;
     text-align: center;
+}
+
+.carousel .carousel-item {
+    height: 800px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 900px;
+    min-width: 100%;
+    text-align: center;
+}
+
+.carousel-container {
+    margin-top: 125px;
 }
