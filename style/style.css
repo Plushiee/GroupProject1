@@ -5,7 +5,41 @@
 }
 
 .bg-image {
-    height: 100vh;
-    background-color: red; /* For browsers that do not support gradients */
+    height: 100%;
+    background-color: #FFFFFF;
     background-image: linear-gradient(#FFFFFF 25%, #EEAFFF 70%, #E78CFF 100%);
+}
+
+.navbar-width {
+    width: 75%;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-color {
+    background-color: rgba(39, 34, 34, 0.18);
+}
+
+h1.txt-treatment {
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+    font-size: 80px;
+    color: white;
+}
+
+.container-sm {
+    max-width: 85% !important;
+}
+
+.borderless {
+    border: none;
+    font-family: 'Josefin Sans';
+    font-size: 19px;
+}
+
+h5 {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
 }
