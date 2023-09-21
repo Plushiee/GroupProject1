@@ -34,7 +34,6 @@ Daftar Kelompok :
 * Arti
 * Dewi Saras Wati Maduri Mulyaning Trirta
 * Schatzi Hawa Eza Leilluna
-* Alamul Huda
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
@@ -52,7 +51,7 @@ Bahasa pemrograman yang digunakan :
 - [x] Pre-Test
 - [ ] Bootstrap
     - [x] Tugas Praktik # 1
-    - [x] Tugas Praktik # 2
+    - [ ] Tugas Praktik # 2
     - [ ] Tugas Praktik # 3
     - [ ] Tugas Praktik # 4
     - [ ] Tugas Praktik # 5
@@ -77,11 +76,15 @@ Trainer Gamelab.ID :
 
 1. Fork Project Ini
 2. Buat Branch Branch Anda (`git checkout -b main/<nama anda>`)
-3. Commit perubahab Anda (`git commit -m 'Add .'`)
-4. Push ke Dalam Branch Anda (`git push origin main/<nama anda>`)
-5. Ajukan Pull Request Untuk Rebase Main 
+3. Commit your Changes (`git commit -m 'Add .'`)
+4. Push to the Branch (`git push origin main/<nama anda>`)
+5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 
 [Sass-lang.com]: https://img.shields.io/badge/SASS-d3679f?style=for-the-badge&logo=sass&logoColor=white
 [Sass-url]: https://sass-lang.com/
