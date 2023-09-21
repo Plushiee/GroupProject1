@@ -34,6 +34,7 @@ Daftar Kelompok :
 * Arti
 * Dewi Saras Wati Maduri Mulyaning Trirta
 * Schatzi Hawa Eza Leilluna
+* Alamul Huda
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
