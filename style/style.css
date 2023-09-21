@@ -27,6 +27,12 @@ h1.txt-treatment {
     color: white;
 }
 
+h1.harga {
+    font-size: xx-large;
+    font-weight: bold;
+    color: red;
+}
+
 .container-sm {
     max-width: 85% !important;
 }
@@ -35,6 +41,11 @@ h1.txt-treatment {
     border: none;
     font-family: 'Josefin Sans';
     font-size: 19px;
+}
+
+small.start {
+    font-family: 'Poppins';
+    font-weight: bold;
 }
 
 h5 {
