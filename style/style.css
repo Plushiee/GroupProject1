@@ -1,73 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bg-image {
-    height: 100%;
-    background-color: #FFFFFF;
-    background-image: linear-gradient(#FFFFFF 25%, #EEAFFF 70%, #E78CFF 100%);
+  height: 100%;
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff 25%, #eeafff 70%, #e78cff 100%);
 }
 
 .navbar-width {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bg-color {
-    background-color: rgba(39, 34, 34, 0.18);
+  background-color: rgba(39, 34, 34, 0.18);
 }
 
 h1.txt-judul {
-    font-family: 'Josefin Sans';
-    font-weight: bolder;
-    font-size: 80px;
-    color: white;
+  font-family: 'Josefin Sans';
+  font-weight: bolder;
+  font-size: 80px;
+  color: white;
 }
 
 h1.harga {
-    font-size: xx-large;
-    font-weight: bold;
-    color: red;
+  font-size: xx-large;
+  font-weight: bold;
+  color: red;
 }
 
 .container-sm {
-    max-width: 85% !important;
+  max-width: 85% !important;
 }
 
 .borderless {
-    border: none;
-    font-family: 'Josefin Sans';
-    font-size: 19px;
+  border: none;
+  font-family: 'Josefin Sans';
+  font-size: 19px;
 }
 
 small.start {
-    font-family: 'Poppins';
-    font-weight: bold;
+  font-family: 'Poppins';
+  font-weight: bold;
 }
 
 h5 {
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
 }
 
 .carousel .carousel-item {
-    height: 800px;
+  height: 800px;
 }
 
 .carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 900px;
-    min-width: 100%;
-    text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 900px;
+  min-width: 100%;
+  text-align: center;
 }
 
 .carousel-container {
-    margin-top: 125px;
+  margin-top: 125px;
 }
+
+/* awal Css By Huda */
+.mix {
+  height: 250px;
+
+  overflow: hidden;
+}
+.mix img {
+  /* opacity: 0.7; */
+  cursor: pointer;
+
+  width: 100%;
+  height: auto;
+  filter: url(controls.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  transition: 0.9s;
+}
+
+.mix img:hover {
+  filter: none;
+}
+
+.controls {
+  width: 100%;
+}
+
+.controls ul {
+  list-style: none;
+}
+
+.controls li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.controls li a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+.controls li a:hover {
+  color: #000;
+}
+
+.controls li:hover {
+  border-bottom: 1px solid #e3ca66;
+}
+
+.controls li.active {
+  color: #e3ca66;
+  border-bottom: 2px solid #e3ca66;
+  padding: auto;
+}
+.controls li.active a {
+  color: #e3ca66;
+}
+/* akhir Css By Huda */
