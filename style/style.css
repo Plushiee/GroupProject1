@@ -72,12 +72,98 @@ h5 {
   margin-top: 125px;
 }
 
+.milink {
+  font-family: 'Jim Nightshade';
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.beauty {}
+
+/* awal CSS by Hawa */
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  padding: 10px;
+  transition: all 0.3s ease;
+  /* Animasi semua properti selama 0.3 detik */
+}
+
+.icon img:hover {
+  transform: scale(1.2);
+  /* Membesarkan ikon saat dihover */
+  background-color: #555;
+}
+
+.address {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Latar belakang semi-transparan */
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  opacity: 0;
+  /* Awalnya tidak terlihat */
+  transform: translateY(20px);
+  /* Mulai dari bawah dan naik 20px */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Animasi opacity dan transform selama 0.5 detik */
+}
+
+/* Animasi perubahan warna teks dan latar belakang */
+@keyframes colorChange {
+  0% {
+    color: #333;
+    /* Warna awal teks */
+    background-color: #fff;
+    /* Warna awal latar belakang */
+  }
+
+  50% {
+    color: #f00;
+    /* Warna tengah perubahan teks */
+    background-color: #333;
+    /* Warna tengah perubahan latar belakang */
+  }
+
+  100% {
+    color: #fff;
+    /* Warna akhir teks */
+    background-color: #00f;
+    /* Warna akhir latar belakang */
+  }
+}
+
+/* Terapkan animasi ke elemen dengan kelas "animated-text-bg" */
+.animated-text-bg {
+  animation: colorChange 5s infinite;
+  /* Animasi selama 5 detik dan diulang-inulang */
+}
+
+/* akhir CSS by Hawa */
+
 /* awal Css By Huda */
 .mix {
   height: 250px;
 
   overflow: hidden;
 }
+
 .mix img {
   /* opacity: 0.7; */
   cursor: pointer;
@@ -108,10 +194,12 @@ h5 {
   font-weight: 600;
   cursor: pointer;
 }
+
 .controls li a {
   color: #b6b6b6;
   text-decoration: none;
 }
+
 .controls li a:hover {
   color: #000;
 }
@@ -125,7 +213,9 @@ h5 {
   border-bottom: 2px solid #e3ca66;
   padding: auto;
 }
+
 .controls li.active a {
   color: #e3ca66;
 }
+
 /* akhir Css By Huda */
