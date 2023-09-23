@@ -78,36 +78,53 @@ h5 {
   font-size: 60px;
 }
 
-.float{
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 40px;
-	right: 40px;
-	background-color: #25d366;
-	color: #FFF;
-	border-radius: 50px;
-	text-align: center;
-  font-size: 30px;
-	box-shadow: 2px 2px 3px #999;
+.float {
+  position: fixed;
+  width: 85px;
+  height: 85px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 45px;
+  box-shadow: 2px 2px 3px #999;
   z-index: 100;
   padding-top: 6px;
   padding-left: 2px;
 }
 
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:50%;
-  position:relative;
-  height:0;
+.float i:hover {
+  color: #555;
 }
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
 }
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* awal CSS by Arti */
+.sosial i {
+  font-size: 50px;
+  color: white;
+  margin: 5px;
+}
+
+.sosial i:hover {
+  color: #bf67a6;
+}
+/* akhir CSS by Arti */
 
 /* awal CSS by Hawa */
 .social-media {
@@ -121,22 +138,20 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 17px;
 }
 
-.icon img {
-  width: 40px;
-  height: 40px;
+.icon i {
+  font-size: 100px;
   border-radius: 50%;
-  background-color: #333;
+  color: white;
   padding: 10px;
   transition: all 0.3s ease;
   /* Animasi semua properti selama 0.3 detik */
 }
 
-.icon img:hover {
-  transform: scale(1.2);
-  /* Membesarkan ikon saat dihover */
-  background-color: #555;
+.icon i:hover {
+  color: #555;
 }
 
 .address {
