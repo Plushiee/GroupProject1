@@ -6,9 +6,8 @@ $(document).ready(function () {
     $('.controls li').removeClass('active');
     $(this).addClass('active');
   });
-});
-//membuat filder dan animate
-$(document).ready(function () {
+
+  //membuat filder dan animate
   var containerEl = $('.gallery');
 
   var mixer = mixitup(containerEl, {
@@ -28,5 +27,58 @@ $(document).ready(function () {
       return current.type === 'image' ? 'next' : false;
     },
   });
+
+  // akhir skrip @Huda
+
+  // Whatsapp logic
+  function linkWa(pesan) {
+    window.open(`https://wa.me/6281282160063?text=${pesan}`);
+  }
+
+  $('#whatsApp').click(function (e) {
+    e.preventDefault();
+
+    Swal.fire({
+      title: 'Hubungi Kami',
+      html:
+        `<form>
+        <div class="mb-3">
+          <select class="form-select" id="jenis" required>
+            <option value="1" selected>Informasi Lebih Lanjut</option>
+            <option value="2">Membuat Jadwal</option>
+          </select>
+        </div>
+        <div>
+          <textarea class="form-control" id="pesan" placeholder="Masukan Pesan" required style="min-height: 150px;"></textarea>
+        </div>
+    </form>`,
+      confirmButtonText: 'Kirim Pesan',
+      focusConfirm: false,
+      preConfirm: () => {
+        const jenis = Swal.getPopup().querySelector('#jenis').value
+        const pesan = Swal.getPopup().querySelector('#pesan').value
+        var ndate = new Date();
+        var hours = ndate.getHours();
+        var sapaan = hours < 12 ? 'Selamat Pagi' : hours < 18 ? 'Selamat Siang' : 'Selamat Malam';
+        var gabungan = "";
+
+        // cek pesan kosong
+        if (pesan === "") {
+          Swal.showValidationMessage(`Pesan Anda masih kosong`)
+        }
+
+        if (jenis == "1") {
+          gabungan = `${sapaan} Kakak admin *Milinkbeauty*, Saya ingin bertanya *informasi lebih lanjut* mengenai :%0a${pesan}`;
+        } else {
+          gabungan = `${sapaan} Kakak admin *Milinkbeauty*, Saya ingin *membuat jadwal* mengenai :%0a ${pesan}`;
+        }
+
+        // Buat message
+        return { gabungan: gabungan }
+      }
+    }).then((result) => {
+      linkWa(result.value.gabungan)
+    })
+  });
+
 });
-// akhir skrip @Huda
