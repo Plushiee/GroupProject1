@@ -28,7 +28,7 @@
   <body class="bg-image">
     <header>
       <!-- place navbar here -->
-      <nav class="navbar navbar-width fixed-top navbar-expand-md navbar-light bg-white shadow mt-4 rounded">
+      <nav class="navbar navbar-width d-none d-md-block fixed-top navbar-expand-md navbar-light bg-white shadow mt-4 rounded">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,31 +36,52 @@
           <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item mx-5">
                 <img class="" src="Assets/Navbar/navbar-logo.png" alt="logo.png" width="55px" />
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#galeri">Gallery</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Treatment</a>
+                <a class="nav-link" href="#treatment">Treatment</a>
               </li>
             </ul>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> -->
         </div>
+      </nav>
+      <nav class="navbar navbar-light bg-light border-top fixed-bottom navbar-expand d-md-none d-lg-none d-xl-none">
+        <ul class="navbar-nav nav-justified w-100">
+          <li class="nav-item">
+            <a href="#home" class="nav-link"><i class="bi bi-house-door-fill"></i><span class="small d-block">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link"><i class="bi bi-info-circle-fill"></i><span class="small d-block">About Us</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#home" class="nav-link">
+              <img class="" src="Assets/Navbar/navbar-logo.png" alt="logo.png" width="55px" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#galeri" class="nav-link"><i class="bi bi-image"></i><span class="small d-block">Galeri</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#treatment" class="nav-link"><i class="bi bi-heart-pulse-fill"></i><span class="small d-block">Treatment</span></a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -74,7 +95,7 @@
       <!-- Whatsapp Floating -->
 
       <!-- Home by Dewi -->
-      <div class="carousel-container">
+      <div class="carousel-container" id="home">
         <div class="container-sm mt-5 px-0 bg-color rounded shadow">
           <div id="carouselExampleControls" class="carousel slide text-dark" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -85,7 +106,7 @@
                 <img src="./Assets/Galeri/nails2.jpeg" alt="" srcset="" />
               </div>
               <div class="carousel-item">
-                <img src="/Assets/Galeri/nails3.jpeg" alt="" srcset="" />
+                <img src="./Assets/Galeri/nails3.jpeg" alt="" srcset="" />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -124,7 +145,7 @@
       <!-- Home by Dewi -->
 
       <!-- About Us -->
-      <div class="container-sm mt-5 py-4 px-4 bg-color rounded text-center">
+      <div class="container-sm mt-5 py-4 px-4 bg-color rounded text-center" id="about">
         <h1 class="txt-judul mb-4">About Us</h1>
         <h2 class="milink">Milink Beauty</h2>
 
@@ -165,7 +186,7 @@
       <!-- About Us -->
 
       <!-- Gallery by Huda -->
-      <div class="container">
+      <div class="container" id="galeri">
         <ul class="controls text-center py-3">
           <h1 class="txt-judul">Galeri</h1>
           <li class="px-3 filter active" data-filter="*">All</li>
@@ -178,63 +199,63 @@
           <div class="row d-flex flex-wrap justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails1.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails1.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails1.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails2.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails2.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails2.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash2.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash2.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash2.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails3.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails3.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails3.jpeg" />
               </a>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash1.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash1.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash1.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails4.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails4.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails4.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash3.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash3.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash3.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails5.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails5.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails5.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash4.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash4.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash4.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails6.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails6.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails6.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash5.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash5.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash5.jpeg" />
               </a>
             </div>
           </div>
@@ -243,7 +264,7 @@
       <!-- Gallery by Huda -->
 
       <!-- Pricelist and Treatment by Niko - Arti -->
-      <div class="container-sm mt-5 py-4 px-4 bg-color rounded">
+      <div class="container-sm mt-5 py-4 px-4 bg-color rounded" id="treatment">
         <h1 class="txt-judul mb-4 text-center">Treatment</h1>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
