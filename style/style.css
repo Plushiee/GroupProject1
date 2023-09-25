@@ -68,9 +68,9 @@ h5 {
   text-align: center;
 }
 
-.carousel-container {
+/* .carousel-container {
   margin-top: 125px;
-}
+} */
 
 .milink {
   font-family: 'Jim Nightshade';
@@ -85,7 +85,7 @@ h5 {
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 45px;
@@ -263,3 +263,46 @@ h5 {
 }
 
 /* akhir Css By Huda */
+
+/* awal css faq - Hawa */
+#faq {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  animation: backgroundScroll 20s linear infinite alternate;
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+}
+
+.answer.active {
+  display: block;
+}
