@@ -7,7 +7,7 @@
 .bg-image {
   height: 100%;
   background-color: #ffffff;
-  background-image: linear-gradient(#ffffff 25%, #eeafff 70%, #e78cff 100%);
+  background-image: linear-gradient(#ffffff 10%, #eeafff 30%, #e78cff 100%);
 }
 
 .navbar-width {
