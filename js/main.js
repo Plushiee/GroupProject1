@@ -42,6 +42,9 @@ $(document).ready(function () {
       title: 'Hubungi Kami',
       html: `<form>
         <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nama" id="nama" required>
+        </div>
+        <div class="mb-3">
           <select class="form-select" id="jenis" required>
             <option value="1" selected>Informasi Lebih Lanjut</option>
             <option value="2">Membuat Jadwal</option>
@@ -56,20 +59,21 @@ $(document).ready(function () {
       preConfirm: () => {
         const jenis = Swal.getPopup().querySelector('#jenis').value;
         const pesan = Swal.getPopup().querySelector('#pesan').value;
+        const nama = Swal.getPopup().querySelector('#nama').value;
         var ndate = new Date();
         var hours = ndate.getHours();
         var sapaan = hours < 12 ? 'Selamat Pagi' : hours < 18 ? 'Selamat Siang' : 'Selamat Malam';
         var gabungan = '';
 
         // cek pesan kosong
-        if (pesan === '') {
+        if (pesan === '' || nama === '') {
           Swal.showValidationMessage(`Pesan Anda masih kosong`);
         }
 
         if (jenis == '1') {
-          gabungan = `${sapaan} Kakak admin *Milinkbeauty*, Saya ingin bertanya *informasi lebih lanjut* mengenai :%0a${pesan}`;
+          gabungan = `${sapaan} Kakak admin *Milinkbeauty*, Saya ${nama} ingin bertanya *informasi lebih lanjut* mengenai :%0a${pesan}`;
         } else {
-          gabungan = `${sapaan} Kakak admin *Milinkbeauty*, Saya ingin *membuat jadwal* mengenai :%0a ${pesan}`;
+          gabungan = `${sapaan} Kakak admin *Milinkbeauty*, Saya ${nama} ingin *membuat jadwal* mengenai :%0a ${pesan}`;
         }
 
         // Buat message
