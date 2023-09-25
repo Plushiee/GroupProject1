@@ -204,17 +204,11 @@ h5 {
 /* akhir CSS by Hawa */
 
 /* awal Css By Huda */
-.mix {
-  /* height: 250px;
-  overflow: hidden; */
-}
 
 .mix img {
   /* opacity: 0.7; */
   cursor: pointer;
-  height: 250px;
-  overflow: hidden;
-  width: 100%;
+
   filter: url(controls.svg#grayscale);
   filter: gray;
   -webkit-filter: grayscale(1);
