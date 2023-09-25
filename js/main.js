@@ -35,25 +35,23 @@ $(document).ready(function () {
     window.open(`https://wa.me/6281282160063?text=${pesan}`);
   }
 
-  $('#whatsApp').click(function (e) {
-    e.preventDefault();
-
+  function hubungiWhatsapp() {
     Swal.fire({
       title: 'Hubungi Kami',
       html: `<form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Nama" id="nama" required>
-        </div>
-        <div class="mb-3">
-          <select class="form-select" id="jenis" required>
-            <option value="1" selected>Informasi Lebih Lanjut</option>
-            <option value="2">Membuat Jadwal</option>
-          </select>
-        </div>
-        <div>
-          <textarea class="form-control" id="pesan" placeholder="Masukan Pesan" required style="min-height: 150px;"></textarea>
-        </div>
-    </form>`,
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nama" id="nama" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" id="jenis" required>
+              <option value="1" selected>Informasi Lebih Lanjut</option>
+              <option value="2">Membuat Jadwal</option>
+            </select>
+          </div>
+          <div>
+            <textarea class="form-control" id="pesan" placeholder="Masukan Pesan" required style="min-height: 150px;"></textarea>
+          </div>
+        </form>`,
       confirmButtonText: 'Kirim Pesan',
       focusConfirm: false,
       preConfirm: () => {
@@ -82,11 +80,21 @@ $(document).ready(function () {
     }).then((result) => {
       linkWa(result.value.gabungan);
     });
-  });
-});
+  };
 
-// script by hawa
-function toggleAnswer(element) {
-  var answer = element.nextElementSibling;
-  answer.classList.toggle('active');
-}
+  $('#whatsApp').click(function (e) {
+    e.preventDefault();
+    hubungiWhatsapp();
+  });
+
+  $('#whatsAppMini').click(function (e) {
+    e.preventDefault();
+    hubungiWhatsapp();
+  });
+
+  // script by hawa
+  function toggleAnswer(element) {
+    var answer = element.nextElementSibling;
+    answer.classList.toggle('active');
+  };
+});

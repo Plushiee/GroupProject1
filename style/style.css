@@ -16,6 +16,14 @@
   margin-right: auto;
 }
 
+.nav-item:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.nav-item:active {
+  background-color: rgb(201, 201, 201);
+}
+
 .bg-color {
   background-color: rgba(39, 34, 34, 0.18);
 }
@@ -95,6 +103,15 @@ h5 {
   z-index: 100;
   padding-top: 6px;
   padding-left: 2px;
+}
+
+.float.small {
+  padding-top: 1px;
+  width: 65px;
+  height: 65px;
+  font-size: 40px;
+  bottom: 90px;
+  right: 15px;
 }
 
 .float i:hover {
