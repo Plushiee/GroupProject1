@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Tugas #1</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin Sans" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Jim Nightshade' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Jim Nightshade" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
@@ -25,385 +23,377 @@
 
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
 
-</head>
-
-<body class="bg-image">
+  <body class="bg-image">
     <header>
-        <!-- place navbar here -->
-        <nav class="navbar navbar-width fixed-top navbar-expand-md navbar-light bg-white shadow mt-4 rounded">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-4">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <img class="" src="Assets/Navbar/navbar-logo.png" alt="logo.png" width="55px" />
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="nav-link" href="#">Treatment</a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </nav>
+      <!-- place navbar here -->
+      <nav class="navbar navbar-width fixed-top navbar-expand-md navbar-light bg-white shadow mt-4 rounded">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item mx-5">
+                <img class="" src="Assets/Navbar/navbar-logo.png" alt="logo.png" width="55px" />
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#">Treatment</a>
+              </li>
+            </ul>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Whatsapp Floating -->
-        <a href="#" class="float" id="whatsApp">
-            <center>
-                <i class="bi bi-whatsapp"></i>
-            </center>
-        </a>
-        <!-- Whatsapp Floating -->
+      <!-- Whatsapp Floating -->
+      <a href="#" class="float" id="whatsApp">
+        <center>
+          <i class="bi bi-whatsapp"></i>
+        </center>
+      </a>
+      <!-- Whatsapp Floating -->
 
-        <!-- Home by Dewi -->
-        <div class="carousel-container">
-            <div class="container-sm mt-5 px-0 bg-color rounded shadow">
-                <div id="carouselExampleControls" class="carousel slide text-dark" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./Assets/Galeri/nails1.jpeg" alt="" srcset="" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Assets/Galeri/nails2.jpeg" alt="" srcset="" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/Assets/Galeri/nails3.jpeg" alt="" srcset="" />
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+      <!-- Home by Dewi -->
+      <div class="carousel-container">
+        <div class="container-sm mt-5 px-0 bg-color rounded shadow">
+          <div id="carouselExampleControls" class="carousel slide text-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Assets/Galeri/nails1.jpeg" alt="" srcset="" />
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/Galeri/nails2.jpeg" alt="" srcset="" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Assets/Galeri/nails3.jpeg" alt="" srcset="" />
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="container-sm mt-5 rounded">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-00 shadow">
-                        <img src="./Assets/Galeri/eyelash3.jpeg" class="card-img-top" alt="nailcare.png" />
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 shadow">
-                        <img src="./Assets/Galeri/eyelash4.jpeg" class="card-img-top" alt="eyebrow.png" />
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 shadow">
-                        <img src="./Assets/Galeri/eyelash5.jpeg" class="card-img-top" alt="eyelash.png" />
-                    </div>
-                </div>
+      <div class="container-sm mt-5 rounded">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-00 shadow">
+              <img src="./Assets/Galeri/eyelash3.jpeg" class="card-img-top" alt="nailcare.png" />
             </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="./Assets/Galeri/eyelash4.jpeg" class="card-img-top" alt="eyebrow.png" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="./Assets/Galeri/eyelash5.jpeg" class="card-img-top" alt="eyelash.png" />
+            </div>
+          </div>
         </div>
-        <!-- Home by Dewi -->
+      </div>
+      <!-- Home by Dewi -->
 
-        <!-- About Us -->
-        <div class="container-sm mt-5 py-4 px-4 bg-color rounded">
-            <center>
-                <h1 class="txt-judul mb-4">About Us</h1>
-                <h2 class="milink">Milink Beauty</h2>
+      <!-- About Us -->
+      <div class="container-sm mt-5 py-4 px-4 bg-color rounded text-center">
+        <h1 class="txt-judul mb-4">About Us</h1>
+        <h2 class="milink">Milink Beauty</h2>
 
-                <section class="social-media">
-                    <div class="icon">
-                        <a href="https://www.instagram.com/mi_linkbeauty/" target="_blank">
-                            <h1><i class="bi bi-instagram"></i></h1>
-                        </a>
-                        <p>@mi_linkbeauty</p> <!-- Teks Instagram -->
-                    </div>
-                    <div class="icon">
-                        <a href="https://wa.me/6281282160063" target="_blank">
-                            <h1><i class="bi bi-whatsapp"></i></h1>
-                        </a>
-                        <p>081282160063</p> <!-- Teks WhatsApp -->
-                    </div>
-                </section>
+        <section class="social-media">
+          <div class="icon">
+            <a href="https://www.instagram.com/mi_linkbeauty/" target="_blank">
+              <h1><i class="bi bi-instagram"></i></h1>
+            </a>
+            <p>@mi_linkbeauty</p>
+            <!-- Teks Instagram -->
+          </div>
+          <div class="icon">
+            <a href="https://wa.me/6281282160063" target="_blank">
+              <h1><i class="bi bi-whatsapp"></i></h1>
+            </a>
+            <p>081282160063</p>
+            <!-- Teks WhatsApp -->
+          </div>
+        </section>
 
-                <!-- Tambah Maps  -->
-                <div class="container-fluid mt-3 px-0 rounded shadow">
-                    <div class="map-responsive">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.600466845137!2d106.77859398103587!3d-6.109294899231453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dbeca5a6a07%3A0x3375ec4f3557e272!2sApartemen%20Green%20Bay%20Pluit%2C%20Tower%20A%20(Akasia)!5e1!3m2!1sid!2sid!4v1695450163978!5m2!1sid!2sid"
-                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <!-- Tambah Maps  -->
-            </center>
+        <!-- Tambah Maps  -->
+        <div class="container-fluid mt-3 px-0 rounded shadow">
+          <div class="map-responsive">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.600466845137!2d106.77859398103587!3d-6.109294899231453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dbeca5a6a07%3A0x3375ec4f3557e272!2sApartemen%20Green%20Bay%20Pluit%2C%20Tower%20A%20(Akasia)!5e1!3m2!1sid!2sid!4v1695450163978!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <!-- About Us -->
 
-        <!-- Gallery by Huda -->
-        <div class="container">
-            <div class="m-4">
-                <ul class="controls text-center m-0 p-0">
-                    <h1 class="txt-judul mb-0">Galeri</h1>
-                    <li class="px-3 filter active" data-filter="*">All</li>
-                    <li class="px-3 filter" data-filter=".nails">Nails</li>
-                    <li class="px-3 filter" data-filter=".eyelash">Eyelash</li>
-                    <li class="px-3 filter" data-filter=".eyebrow">Eyebrow</li>
+        <!-- Tambah Maps  -->
+      </div>
+
+      <!-- About Us -->
+
+      <!-- Gallery by Huda -->
+      <div class="container">
+        <ul class="controls text-center py-3">
+          <h1 class="txt-judul">Galeri</h1>
+          <li class="px-3 filter active" data-filter="*">All</li>
+          <li class="px-3 filter" data-filter=".nails">Nails</li>
+          <li class="px-3 filter" data-filter=".eyelash">Eyelash</li>
+          <li class="px-3 filter" data-filter=".eyebrow">Eyebrow</li>
+        </ul>
+
+        <div class="gallery">
+          <div class="row d-flex flex-wrap justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
+              <a href="./Assets/Galeri/nails1.jpeg" data-fancybox="nail">
+                <img src="./Assets/Galeri/nails1.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
+              <a href="./Assets/Galeri/eyelash.jpeg" data-fancybox="eyelash">
+                <img src="./Assets/Galeri/eyelash.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
+              <a href="./Assets/Galeri/nails2.jpeg" data-fancybox="nail">
+                <img src="./Assets/Galeri/nails2.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
+              <a href="./Assets/Galeri/eyelash2.jpeg" data-fancybox="eyelash">
+                <img src="./Assets/Galeri/eyelash2.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
+              <a href="./Assets/Galeri/nails3.jpeg" data-fancybox="nail">
+                <img src="./Assets/Galeri/nails3.jpeg" />
+              </a>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
+              <a href="./Assets/Galeri/eyelash1.jpeg" data-fancybox="eyelash">
+                <img src="./Assets/Galeri/eyelash1.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
+              <a href="./Assets/Galeri/nails4.jpeg" data-fancybox="nail">
+                <img src="./Assets/Galeri/nails4.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
+              <a href="./Assets/Galeri/eyelash3.jpeg" data-fancybox="eyelash">
+                <img src="./Assets/Galeri/eyelash3.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
+              <a href="./Assets/Galeri/nails5.jpeg" data-fancybox="nail">
+                <img src="./Assets/Galeri/nails5.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
+              <a href="./Assets/Galeri/eyelash4.jpeg" data-fancybox="eyelash">
+                <img src="./Assets/Galeri/eyelash4.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
+              <a href="./Assets/Galeri/nails6.jpeg" data-fancybox="nail">
+                <img src="./Assets/Galeri/nails6.jpeg" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
+              <a href="./Assets/Galeri/eyelash5.jpeg" data-fancybox="eyelash">
+                <img src="./Assets/Galeri/eyelash5.jpeg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery by Huda -->
+
+      <!-- Pricelist and Treatment by Niko - Arti -->
+      <div class="container-sm mt-5 py-4 px-4 bg-color rounded">
+        <h1 class="txt-judul mb-4 text-center">Treatment</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="Assets/Galeri/nails5.jpeg" class="card-img-top" alt="nailcare.png" />
+              <div class="card-body">
+                <h5 class="card-title">Nail Care</h5>
+                <ul class="card-text list-group">
+                  <li class="list-group-item borderless">Nail Care Gel + Manicure Express</li>
+                  <li class="list-group-item borderless">Nail Care Gel + Pedicure Express</li>
+                  <li class="list-group-item borderless">Nail Care Gel Accessories Ads</li>
+                  <li class="list-group-item borderless">Remove Nail Care 1 Fingger</li>
+                  <li class="list-group-item borderless">Remove Nail Care 10 Finggers</li>
                 </ul>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary start">start from</small>
+                <h1 class="harga">Rp3.000,-</h1>
+              </div>
             </div>
-            <div class="gallery">
-                <div class="row d-flex flex-wrap justify-content-center">
-                    <div class="col-12 col-md-6 col-lg-3 m-2 mix nails">
-                        <a href="./Assets/Galeri/nails1.jpeg" data-fancybox="nail">
-                            <img src="./Assets/Galeri/nails1.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix eyelash">
-                        <a href="./Assets/Galeri/eyelash.jpeg" data-fancybox="eyelash">
-                            <img src="./Assets/Galeri/eyelash.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix nails">
-                        <a href="./Assets/Galeri/nails2.jpeg" data-fancybox="nail">
-                            <img src="./Assets/Galeri/nails2.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix eyelash">
-                        <a href="./Assets/Galeri/eyelash2.jpeg" data-fancybox="eyelash">
-                            <img src="./Assets/Galeri/eyelash2.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix nails">
-                        <a href="./Assets/Galeri/nails3.jpeg" data-fancybox="nail">
-                            <img src="./Assets/Galeri/nails3.jpeg" />
-                        </a>
-                    </div>
+          </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix eyelash">
-                        <a href="./Assets/Galeri/eyelash1.jpeg" data-fancybox="eyelash">
-                            <img src="./Assets/Galeri/eyelash1.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix nails">
-                        <a href="./Assets/Galeri/nails4.jpeg" data-fancybox="nail">
-                            <img src="./Assets/Galeri/nails4.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix eyelash">
-                        <a href="./Assets/Galeri/eyelash3.jpeg" data-fancybox="eyelash">
-                            <img src="./Assets/Galeri/eyelash3.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix nails">
-                        <a href="./Assets/Galeri/nails5.jpeg" data-fancybox="nail">
-                            <img src="./Assets/Galeri/nails5.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix eyelash">
-                        <a href="./Assets/Galeri/eyelash4.jpeg" data-fancybox="eyelash">
-                            <img src="./Assets/Galeri/eyelash4.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix nails">
-                        <a href="./Assets/Galeri/nails6.jpeg" data-fancybox="nail">
-                            <img src="./Assets/Galeri/nails6.jpeg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 m-2 mix eyelash">
-                        <a href="./Assets/Galeri/eyelash5.jpeg" data-fancybox="eyelash">
-                            <img src="./Assets/Galeri/eyelash5.jpeg" />
-                        </a>
-                    </div>
-                </div>
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="Assets/Galeri/eyelash2.jpeg" class="card-img-top" alt="eyebrow.png" />
+              <div class="card-body">
+                <h5 class="card-title">Eyebrow</h5>
+                <ul class="card-text list-group">
+                  <li class="list-group-item borderless">Eyebrow Microblading</li>
+                  <li class="list-group-item borderless">Eyebrow Shading</li>
+                  <li class="list-group-item borderless">Eyebrow Microshading</li>
+                  <li class="list-group-item borderless">Eyebrow Sulam Bibir</li>
+                  <li class="list-group-item borderless">Eyebrow BB Glow</li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary start">start from</small>
+                <h1 class="harga">Rp700.000,-</h1>
+              </div>
             </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="Assets/Galeri/eyelash4.jpeg" class="card-img-top" alt="eyelash.png" />
+              <div class="card-body">
+                <h5 class="card-title">Eyelash</h5>
+                <ul class="card-text list-group">
+                  <li class="list-group-item borderless">Extension Single / Natural</li>
+                  <li class="list-group-item borderless">Extension Double</li>
+                  <li class="list-group-item borderless">Extension Russian Volume</li>
+                  <li class="list-group-item borderless">Extension Mega Volume</li>
+                  <li class="list-group-item borderless">Extension Keratin Lash</li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary start">start from</small>
+                <h1 class="harga">Rp1.000.000,-</h1>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Gallery by Huda -->
+      </div>
+      <!-- Pricelist and Treatment by Niko - Arti -->
+      <!-- faq by HAWA -->
+      <div class="container-sm mt-5 py-4 px-4 bg-color rounded" id="faq">
+        <h1>FAQ - Beauty Services</h1>
 
-        <!-- Pricelist and Treatment by Niko - Arti -->
-        <div class="container-sm mt-5 py-4 px-4 bg-color rounded">
-            <center>
-                <h1 class="txt-judul mb-4">Treatment</h1>
-            </center>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow">
-                        <img src="Assets/Galeri/nails5.jpeg" class="card-img-top" alt="nailcare.png" />
-                        <div class="card-body">
-                            <h5 class="card-title">Nail Care</h5>
-                            <ul class="card-text list-group">
-                                <li class="list-group-item borderless">Nail Care Gel + Manicure Express</li>
-                                <li class="list-group-item borderless">Nail Care Gel + Pedicure Express</li>
-                                <li class="list-group-item borderless">Nail Care Gel Accessories Ads</li>
-                                <li class="list-group-item borderless">Remove Nail Care 1 Fingger</li>
-                                <li class="list-group-item borderless">Remove Nail Care 10 Finggers</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <center>
-                                <small class="text-body-secondary start">start from</small>
-                                <h1 class="harga">Rp3.000,-</h1>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 shadow">
-                        <img src="Assets/Galeri/eyelash2.jpeg" class="card-img-top" alt="eyebrow.png" />
-                        <div class="card-body">
-                            <h5 class="card-title">Eyebrow</h5>
-                            <ul class="card-text list-group">
-                                <li class="list-group-item borderless">Eyebrow Microblading</li>
-                                <li class="list-group-item borderless">Eyebrow Shading</li>
-                                <li class="list-group-item borderless">Eyebrow Microshading</li>
-                                <li class="list-group-item borderless">Eyebrow Sulam Bibir</li>
-                                <li class="list-group-item borderless">Eyebrow BB Glow</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <center>
-                                <small class="text-body-secondary start">start from</small>
-                                <h1 class="harga">Rp700.000,-</h1>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 shadow">
-                        <img src="Assets/Galeri/eyelash4.jpeg" class="card-img-top" alt="eyelash.png" />
-                        <div class="card-body">
-                            <h5 class="card-title">Eyelash</h5>
-                            <ul class="card-text list-group">
-                                <li class="list-group-item borderless">Extension Single / Natural</li>
-                                <li class="list-group-item borderless">Extension Double</li>
-                                <li class="list-group-item borderless">Extension Russian Volume</li>
-                                <li class="list-group-item borderless">Extension Mega Volume</li>
-                                <li class="list-group-item borderless">Extension Keratin Lash</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <center>
-                                <small class="text-body-secondary start">start from</small>
-                                <h1 class="harga">Rp1.000.000,-</h1>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- FAQ for Eyelash -->
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apa itu eyelash extensions?</div>
+          <div class="answer">Eyelash extensions adalah prosedur di mana bulu mata palsu ditempelkan pada bulu mata asli Anda untuk memberikan tampilan yang lebih penuh dan panjang.</div>
         </div>
-        <!-- Pricelist and Treatment by Niko - Arti -->
-        <!-- faq by HAWA -->
-        <div class="container-sm mt-5 py-4 px-4 bg-color rounded" id="faq">
-            <h1>FAQ - Beauty Services</h1>
-            
-            <!-- FAQ for Eyelash -->
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apa itu eyelash extensions?</div>
-                <div class="answer">Eyelash extensions adalah prosedur di mana bulu mata palsu ditempelkan pada bulu mata asli Anda untuk memberikan tampilan yang lebih penuh dan panjang.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Berapa lama hasil eyelash extensions dapat bertahan?</div>
-                <div class="answer">Umumnya, eyelash extensions dapat bertahan antara 4 hingga 6 minggu, tergantung pada perawatan dan gaya yang dipilih.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apakah eyelash extensions aman untuk bulu mata saya?</div>
-                <div class="answer">Eyelash extensions yang diterapkan dengan benar oleh teknisi berlisensi umumnya aman. Pastikan untuk mengikuti perawatan pasca-perawatan yang disarankan.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apakah ada efek samping yang mungkin terjadi setelah eyelash extensions?</div>
-                <div class="answer">Beberapa orang mungkin mengalami iritasi atau alergi terhadap lem perekat yang digunakan dalam eyelash extensions. Ini adalah efek samping yang mungkin terjadi, tetapi relatif jarang.</div>
-            </div>
-    
-            <!-- FAQ for Nailcare -->
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apa yang dimaksud dengan manicure dan pedicure?</div>
-                <div class="answer">Manicure adalah perawatan untuk kuku tangan, sedangkan pedicure adalah perawatan untuk kuku kaki. Keduanya mencakup pemotongan, perapian, dan pengecatan kuku.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Berapa lama biasanya sebuah manicure atau pedicure bertahan?</div>
-                <div class="answer">Hasil manicure dan pedicure dapat bertahan antara 1 hingga 2 minggu, tergantung pada jenis perawatan yang Anda pilih, seperti gel polish atau kutek biasa.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apakah perawatan kuku berbahaya?</div>
-                <div class="answer">Perawatan kuku yang dilakukan oleh profesional yang berlisensi biasanya aman. Hindari mencoba melakukan perawatan sendiri yang kompleks, karena ini dapat menyebabkan cedera.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apa manfaat perawatan kuku secara rutin?</div>
-                <div class="answer">Perawatan kuku rutin dapat menjaga kesehatan dan penampilan kuku Anda, serta membantu mencegah masalah kuku seperti kuku yang rapuh atau kuku kaki yang tumbuh tidak normal.</div>
-            </div>
-    
-            <!-- FAQ for Eyebrow -->
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apa itu eyebrow shaping?</div>
-                <div class="answer">Eyebrow shaping adalah prosedur yang digunakan untuk merapikan dan membentuk alis agar sesuai dengan bentuk wajah Anda.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Berapa lama hasil eyebrow shaping dapat bertahan?</div>
-                <div class="answer">Hasil eyebrow shaping dapat bertahan antara 2 hingga 4 minggu, tergantung pada pertumbuhan alis Anda.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apa metode yang paling umum digunakan untuk eyebrow shaping?</div>
-                <div class="answer">Metode yang paling umum digunakan untuk eyebrow shaping adalah mencabut, waxing, threading, atau menggunakan teknik microblading.</div>
-            </div>
-    
-            <div class="faq-item">
-                <div class="question" onclick="toggleAnswer(this)">Apakah eyebrow shaping menyakitkan?</div>
-                <div class="answer">Rasa sakit saat eyebrow shaping tergantung pada tingkat toleransi Anda terhadap nyeri. Beberapa orang mungkin merasakan sedikit ketidaknyamanan, tetapi ini bersifat sementara.</div>
-            </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Berapa lama hasil eyelash extensions dapat bertahan?</div>
+          <div class="answer">Umumnya, eyelash extensions dapat bertahan antara 4 hingga 6 minggu, tergantung pada perawatan dan gaya yang dipilih.</div>
         </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apakah eyelash extensions aman untuk bulu mata saya?</div>
+          <div class="answer">Eyelash extensions yang diterapkan dengan benar oleh teknisi berlisensi umumnya aman. Pastikan untuk mengikuti perawatan pasca-perawatan yang disarankan.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apakah ada efek samping yang mungkin terjadi setelah eyelash extensions?</div>
+          <div class="answer">Beberapa orang mungkin mengalami iritasi atau alergi terhadap lem perekat yang digunakan dalam eyelash extensions. Ini adalah efek samping yang mungkin terjadi, tetapi relatif jarang.</div>
+        </div>
+
+        <!-- FAQ for Nailcare -->
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apa yang dimaksud dengan manicure dan pedicure?</div>
+          <div class="answer">Manicure adalah perawatan untuk kuku tangan, sedangkan pedicure adalah perawatan untuk kuku kaki. Keduanya mencakup pemotongan, perapian, dan pengecatan kuku.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Berapa lama biasanya sebuah manicure atau pedicure bertahan?</div>
+          <div class="answer">Hasil manicure dan pedicure dapat bertahan antara 1 hingga 2 minggu, tergantung pada jenis perawatan yang Anda pilih, seperti gel polish atau kutek biasa.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apakah perawatan kuku berbahaya?</div>
+          <div class="answer">Perawatan kuku yang dilakukan oleh profesional yang berlisensi biasanya aman. Hindari mencoba melakukan perawatan sendiri yang kompleks, karena ini dapat menyebabkan cedera.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apa manfaat perawatan kuku secara rutin?</div>
+          <div class="answer">Perawatan kuku rutin dapat menjaga kesehatan dan penampilan kuku Anda, serta membantu mencegah masalah kuku seperti kuku yang rapuh atau kuku kaki yang tumbuh tidak normal.</div>
+        </div>
+
+        <!-- FAQ for Eyebrow -->
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apa itu eyebrow shaping?</div>
+          <div class="answer">Eyebrow shaping adalah prosedur yang digunakan untuk merapikan dan membentuk alis agar sesuai dengan bentuk wajah Anda.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Berapa lama hasil eyebrow shaping dapat bertahan?</div>
+          <div class="answer">Hasil eyebrow shaping dapat bertahan antara 2 hingga 4 minggu, tergantung pada pertumbuhan alis Anda.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apa metode yang paling umum digunakan untuk eyebrow shaping?</div>
+          <div class="answer">Metode yang paling umum digunakan untuk eyebrow shaping adalah mencabut, waxing, threading, atau menggunakan teknik microblading.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Apakah eyebrow shaping menyakitkan?</div>
+          <div class="answer">Rasa sakit saat eyebrow shaping tergantung pada tingkat toleransi Anda terhadap nyeri. Beberapa orang mungkin merasakan sedikit ketidaknyamanan, tetapi ini bersifat sementara.</div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <!-- Footer by Arti -->
-        <div class="container d-flex justify-content-center mt-4">
-            <div class="sosial mb-2">
-                <a href="https://wa.me/6281282160063" target="_blank">
-                    <i class="bi bi-whatsapp"></i></a>
+      <!-- Footer by Arti -->
+      <div class="container d-flex justify-content-center mt-4">
+        <div class="sosial mb-2">
+          <a href="https://wa.me/6281282160063" target="_blank"> <i class="bi bi-whatsapp"></i></a>
 
-                <a href="https://www.instagram.com/mi_linkbeauty/" target="_blank">
-                    <i class="bi bi-instagram"></i></a>
-            </div>
+          <a href="https://www.instagram.com/mi_linkbeauty/" target="_blank"> <i class="bi bi-instagram"></i></a>
         </div>
-        <!-- Copyright -->
-        <div class="text-center text-white py-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            ©2023 Copyright :
-            <a class="text-white" href="#" style="text-decoration: none; font-weight: bold;">Mi Link Beauty</a>
-        </div>
-        <!-- /Copyright -->
-        <!-- Footer by Arti -->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center text-white py-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        ©2023 Copyright :
+        <a class="text-white" href="#" style="text-decoration: none; font-weight: bold">Mi Link Beauty</a>
+      </div>
+      <!-- /Copyright -->
+      <!-- Footer by Arti -->
     </footer>
 
     <!-- Script -->
@@ -413,16 +403,11 @@
     <!-- fancybox library untuk galeri-->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <!-- Library jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
