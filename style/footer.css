@@ -1,0 +1,26 @@
+.footer2 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul.footer {
+  font-size: 20px;
+  font-weight: bold;
+}
+ul.footer li a {
+  font-weight: normal;
+  color: white;
+}
+ul.footer li span a {
+  text-decoration: none;
+}
+ul.footer li.nav-item:hover {
+  background-color: transparent;
+}
+ul.footer li.nav-item:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+ul.footer .copyright {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=footer.css.map */
