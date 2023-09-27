@@ -1,0 +1,131 @@
+/*
+  -- Colors
+  */
+.bi {
+  font-size: 30px;
+  color: purple;
+}
+
+.navbawah {
+  background-color: #fff;
+}
+.navbawah ul {
+  list-style-type: none;
+  padding: 20px;
+}
+.navbawah li {
+  display: inline-flex;
+  width: 50%;
+  margin-right: -4px;
+}
+.navbawah a {
+  height: 68px;
+  width: 100%;
+  text-decoration: none;
+  color: red;
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.navbawah a:hover i {
+  transition: all 0.4s;
+}
+.navbawah a i {
+  position: absolute;
+  z-index: 3;
+}
+.navbawah a i:after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  transform: rotate(20deg);
+  right: -5px;
+  bottom: 0;
+  left: -5px;
+  height: 3px;
+  z-index: 4;
+}
+.navbawah a span {
+  color: #1a237e;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1;
+  transform: translateY(20px);
+  position: relative;
+}
+.navbawah a span:first-letter {
+  text-transform: capitalize;
+}
+.navbawah a span:after {
+  content: "";
+  background-color: #1a237e;
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: flex;
+  left: calc(50% - 2.5px);
+  top: 25px;
+  transform: scale();
+  opacity: 0;
+}
+.navbawah a:after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  transform: rotate(15deg);
+  right: -2px;
+  bottom: -14px;
+  left: -8px;
+  height: 40px;
+  z-index: 2;
+}
+.navbawah a.isActive i {
+  transform: translateY(-40px);
+  transition: all 0.8s;
+}
+.navbawah a.isActive i:after {
+  transition: all 0.6s;
+  height: 32px;
+}
+.navbawah a.isActive span {
+  transform: translateY(0);
+  transition: all 0.4s ease-in;
+}
+.navbawah a.isActive span:after {
+  transition: all 0.8s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+.navbawah a.isActive:after {
+  height: 10px;
+  transition: height 1s;
+}
+.navbawah a.notActive i {
+  transform: translateY(0);
+  transition: all 0.8s;
+}
+.navbawah a.notActive i:after {
+  transition: all 0.6s;
+  height: 1px;
+}
+.navbawah a.notActive span {
+  transform: translateY(20px);
+  transition: all 0.4s ease-in;
+}
+.navbawah a.notActive span:after {
+  transition: all 0.8s ease;
+  transform: scale(0);
+  opacity: 1;
+}
+.navbawah a.notActive:after {
+  height: 50px;
+  transition: height 1s;
+}
+.navbawah .material-icons-outlined {
+  color: #7986cb;
+  font-size: 32px;
+}
+
+/*# sourceMappingURL=style-navbawah.css.map */
