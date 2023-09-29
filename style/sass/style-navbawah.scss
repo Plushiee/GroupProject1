@@ -1,3 +1,4 @@
+@use 'sass:math';
 $nav-list-item-width: 50%;
 $nav-padding: 20px;
 $nav-link-margin: 10px;
@@ -26,6 +27,7 @@ $nav-link-text-color: #1a237e;
   font-size: 30px;
   color: purple;
 }
+
 .navbawah {
   background-color: $nav-background-color;
 
@@ -86,6 +88,7 @@ $nav-link-text-color: #1a237e;
       &:first-letter {
         text-transform: capitalize;
       }
+
       &:after {
         content: '';
         background-color: $nav-link-text-color;
@@ -94,7 +97,7 @@ $nav-link-text-color: #1a237e;
         width: $nav-circle-size;
         border-radius: $nav-circle-radius;
         display: flex;
-        left: calc(50% - #{$nav-circle-size / 2});
+        left: calc(50% - math.div($nav-circle-size, 2));
         top: 25px;
         transform: scale();
         opacity: 0;
