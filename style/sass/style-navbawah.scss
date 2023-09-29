@@ -1,0 +1,159 @@
+@use 'sass:math';
+$nav-list-item-width: 50%;
+$nav-padding: 20px;
+$nav-link-margin: 10px;
+$nav-link-height: 68px;
+$nav-link-width: 100%;
+$nav-icon-size: 32px;
+$nav-circle-size: 5px;
+$nav-circle-radius: 50%;
+$nav-link-font-size: 14px;
+$nav-link-font-weight: 500;
+$nav-link-text-z-index: 1;
+$nav-link-text-mask-z-index: 2;
+$nav-icon-z-index: 3;
+$nav-icon-mask-z-index: 4;
+
+/*
+  -- Colors
+  */
+
+$body-background-color: #fff;
+$container-background-color: #3f51b5;
+$nav-background-color: #fff;
+$nav-icon-color: #7986cb;
+$nav-link-text-color: #1a237e;
+.bi {
+  font-size: 30px;
+  color: purple;
+}
+
+.navbawah {
+  background-color: $nav-background-color;
+
+  ul {
+    list-style-type: none;
+    padding: $nav-padding;
+  }
+
+  li {
+    display: inline-flex;
+    width: $nav-list-item-width;
+    // background-color: red
+    //remove li spacing
+    margin-right: -4px;
+  }
+
+  a {
+    height: $nav-link-height;
+    width: $nav-link-width;
+    text-decoration: none;
+    color: red;
+    position: relative;
+    overflow: hidden;
+    margin-right: $nav-link-margin;
+    margin-left: $nav-link-margin;
+
+    &:hover {
+      i {
+        transition: all 0.4s;
+      }
+    }
+
+    i {
+      position: absolute;
+      z-index: $nav-icon-z-index;
+      &:after {
+        content: '';
+        // background-color: red;
+        background-color: $nav-background-color;
+        position: absolute;
+        transform: rotate(20deg);
+        right: -5px;
+        bottom: 0;
+        left: -5px;
+        height: 3px;
+
+        z-index: $nav-icon-mask-z-index;
+      }
+    }
+
+    span {
+      color: $nav-link-text-color;
+      font-size: $nav-link-font-size;
+      font-weight: $nav-link-font-weight;
+      z-index: $nav-link-text-z-index;
+      transform: translateY(20px);
+      position: relative;
+      &:first-letter {
+        text-transform: capitalize;
+      }
+
+      &:after {
+        content: '';
+        background-color: $nav-link-text-color;
+        position: absolute;
+        height: $nav-circle-size;
+        width: $nav-circle-size;
+        border-radius: $nav-circle-radius;
+        display: flex;
+        left: calc(50% - math.div($nav-circle-size, 2));
+        top: 25px;
+        transform: scale();
+        opacity: 0;
+      }
+    }
+
+    &:after {
+      content: '';
+      background-color: $nav-background-color;
+      position: absolute;
+      transform: rotate(15deg);
+      right: -2px;
+      bottom: -14px;
+      left: -8px;
+      height: 40px;
+      z-index: $nav-link-text-mask-z-index;
+    }
+  }
+
+  @mixin onClick($translateIcon, $IconMaskHeight, $translateSpan, $scaleCircle, $linkMaskHeight) {
+    i {
+      transform: translateY($translateIcon);
+      transition: all 0.8s;
+      &:after {
+        transition: all 0.6s;
+        height: $IconMaskHeight;
+      }
+    }
+
+    span {
+      transform: translateY($translateSpan);
+      transition: all 0.4s ease-in;
+      &:after {
+        transition: all 0.8s ease;
+        transform: scale($scaleCircle);
+        opacity: 1;
+      }
+    }
+    &:after {
+      height: $linkMaskHeight;
+      transition: height 1s;
+    }
+  }
+
+  //onClick
+  a.isActive {
+    @include onClick(-40px, $nav-icon-size, 0, 1, 10px);
+  }
+
+  //onClick other links
+  a.notActive {
+    @include onClick(0, 1px, 20px, 0, 50px);
+  }
+
+  .material-icons-outlined {
+    color: $nav-icon-color;
+    font-size: $nav-icon-size;
+  }
+}
