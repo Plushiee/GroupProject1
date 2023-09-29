@@ -1,0 +1,45 @@
+@function change-background($map, $key) {
+    @return map-get($map, $key);
+}
+
+@function change-color($map, $key) {
+    @return map-get($map, $key);
+}
+
+$background-color: (
+    'white': rgb(255, 255, 255),
+    'main' : #b972cc,
+    'grey' : rgb(203, 203, 203),
+);
+
+$text: (
+    'clicked': rgb(255, 255, 255),
+    'normal' : black,
+);
+
+$font-weight : normal;
+
+.accordion {
+    --bs-accordion-active-bg: #{change-background($background-color, 'main')};
+    --bs-accordion-active-color: #{change-color($text, 'clicked')};
+    $font-weight : bold !global;
+
+    .accordion-item {
+        --bs-accordion-border-color: #{change-color($background-color, 'grey')};
+    }
+
+    .accordion-header {
+
+        button.accordion-button {
+            font-weight: $font-weight;
+
+            &:active {
+                background-color: change-background($background-color, 'main');
+                --bs-accordion-border-color: #{change-background($background-color, 'grey')};
+            }
+        }
+    }
+    .accordion-button.collapsed {
+        background: white
+      }
+}
