@@ -59,8 +59,8 @@ Bahasa pemrograman yang digunakan :
     - [x] Tugas Praktik # 6
 - [ ] SASS
     - [x] Tugas Praktik # 7
-    - [ ] Tugas Praktik # 8
-    - [ ] Tugas Praktik # 9
+    - [x] Tugas Praktik # 8
+    - [x] Tugas Praktik # 9
     - [ ] Tugas Praktik # 10
     - [ ] Tugas Praktik # 11
     - [ ] Tugas Praktik # 12
