@@ -93,22 +93,35 @@ $(document).ready(function () {
   });
 
   // script nav bawah @huda
-  function addClass(elem) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener('click', function (e) {
-        const current = this;
-        for (let i = 0; i < elem.length; i++) {
-          if (current !== elem[i]) {
-            elem[i].classList.remove('isActive');
-            elem[i].classList.add('notActive');
-          } else {
-            current.classList.add('isActive');
-            current.classList.remove('notActive');
-          }
-        }
-        e.preventDefault();
-      });
+
+  $('.link').click(function () {
+    // Select menu navbar bawah
+    var listItems = $('.link');
+
+    // Remove 'isactive' pada navwabr bawah
+    for (let i = 0; i < listItems.length; i++) {
+      listItems[i].classList.remove('isActive');
     }
-  }
-  addClass(document.querySelectorAll('.link'));
+
+    // Add 'active' pada navwabr bawah
+    this.classList.add('isActive');
+  });
+  // function addClass(elem) {
+  //   for (let i = 0; i < elem.length; i++) {
+  //     elem[i].addEventListener('click', function (e) {
+  //       const current = this;
+  //       for (let i = 0; i < elem.length; i++) {
+  //         if (current !== elem[i]) {
+  //           elem[i].classList.remove('isActive');
+  //           elem[i].classList.add('notActive');
+  //         } else {
+  //           current.classList.add('isActive');
+  //           current.classList.remove('notActive');
+  //         }
+  //       }
+  //       e.preventDefault();
+  //     });
+  //   }
+  // }
+  // addClass(document.querySelectorAll('.link'));
 });
