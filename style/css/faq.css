@@ -1,0 +1,19 @@
+.accordion {
+  --bs-accordion-active-bg: #b972cc;
+  --bs-accordion-active-color: rgb(255, 255, 255);
+}
+.accordion .accordion-item {
+  --bs-accordion-border-color: rgb(203, 203, 203);
+}
+.accordion .accordion-header button.accordion-button {
+  font-weight: bold;
+}
+.accordion .accordion-header button.accordion-button:active {
+  background-color: #b972cc;
+  --bs-accordion-border-color: rgb(203, 203, 203);
+}
+.accordion .accordion-button.collapsed {
+  background: white;
+}
+
+/*# sourceMappingURL=faq.css.map */

@@ -7,13 +7,21 @@
 .bg-image {
   height: 100%;
   background-color: #ffffff;
-  background-image: linear-gradient(#ffffff 25%, #eeafff 70%, #e78cff 100%);
+  background-image: linear-gradient(#ffffff 10%, #eeafff 30%, #e78cff 100%);
 }
 
 .navbar-width {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.nav-item:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.nav-item:active {
+  background-color: rgb(201, 201, 201);
 }
 
 .bg-color {
@@ -29,6 +37,12 @@ h1.txt-judul {
 
 h1.harga {
   font-size: xx-large;
+  font-weight: bold;
+  color: red;
+}
+
+h3.harga {
+  font-size: 22px;
   font-weight: bold;
   color: red;
 }
@@ -82,23 +96,34 @@ h5 {
 
 .float {
   position: fixed;
-  width: 85px;
-  height: 85px;
+  width: 65px;
+  height: 65px;
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  font-size: 45px;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
-  padding-top: 6px;
+  padding-top: 8px;
   padding-left: 2px;
+}
+
+.float.small {
+  padding-top: 0px;
+  width: 50px;
+  height: 50px;
+  bottom: 110px;
+  right: 15px;
 }
 
 .float i:hover {
   color: #555;
+}
+
+.float .i {
+  font-size: 40px;
 }
 
 .map-responsive {
@@ -140,16 +165,20 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .icon i {
-  font-size: 100px;
+  font-size: 46px;
   border-radius: 50%;
   color: white;
   padding: 10px;
   transition: all 0.3s ease;
   /* Animasi semua properti selama 0.3 detik */
+}
+
+.icon p {
+  font-size: 20px;
 }
 
 .icon i:hover {
@@ -204,17 +233,11 @@ h5 {
 /* akhir CSS by Hawa */
 
 /* awal Css By Huda */
-.mix {
-  /* height: 250px;
-  overflow: hidden; */
-}
 
 .mix img {
   /* opacity: 0.7; */
   cursor: pointer;
-  height: 250px;
-  overflow: hidden;
-  width: 100%;
+
   filter: url(controls.svg#grayscale);
   filter: gray;
   -webkit-filter: grayscale(1);
@@ -307,4 +330,8 @@ h1 {
 
 .answer.active {
   display: block;
+}
+
+.deskripsi {
+  color: white;
 }

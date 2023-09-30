@@ -35,25 +35,23 @@ $(document).ready(function () {
     window.open(`https://wa.me/6281282160063?text=${pesan}`);
   }
 
-  $('#whatsApp').click(function (e) {
-    e.preventDefault();
-
+  function hubungiWhatsapp() {
     Swal.fire({
       title: 'Hubungi Kami',
       html: `<form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Nama" id="nama" required>
-        </div>
-        <div class="mb-3">
-          <select class="form-select" id="jenis" required>
-            <option value="1" selected>Informasi Lebih Lanjut</option>
-            <option value="2">Membuat Jadwal</option>
-          </select>
-        </div>
-        <div>
-          <textarea class="form-control" id="pesan" placeholder="Masukan Pesan" required style="min-height: 150px;"></textarea>
-        </div>
-    </form>`,
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nama" id="nama" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" id="jenis" required>
+              <option value="1" selected>Informasi Lebih Lanjut</option>
+              <option value="2">Membuat Jadwal</option>
+            </select>
+          </div>
+          <div>
+            <textarea class="form-control" id="pesan" placeholder="Masukan Pesan" required style="min-height: 150px;"></textarea>
+          </div>
+        </form>`,
       confirmButtonText: 'Kirim Pesan',
       focusConfirm: false,
       preConfirm: () => {
@@ -82,11 +80,49 @@ $(document).ready(function () {
     }).then((result) => {
       linkWa(result.value.gabungan);
     });
-  });
-});
+  }
 
-// script by hawa
-function toggleAnswer(element) {
-  var answer = element.nextElementSibling;
-  answer.classList.toggle('active');
-}
+  $('#whatsApp').click(function (e) {
+    e.preventDefault();
+    hubungiWhatsapp();
+  });
+
+  $('#whatsAppMini').click(function (e) {
+    e.preventDefault();
+    hubungiWhatsapp();
+  });
+
+  // script nav bawah @huda
+
+  $('.link').click(function () {
+    // Select menu navbar bawah
+    var listItems = $('.link');
+
+    // Remove 'isactive' pada navwabr bawah
+    for (let i = 0; i < listItems.length; i++) {
+      listItems[i].classList.remove('isActive');
+    }
+
+    // Add 'active' pada navwabr bawah
+    this.classList.add('isActive');
+  });
+  // function addClass(elem) {
+  //   for (let i = 0; i < elem.length; i++) {
+  //     elem[i].addEventListener('click', function (e) {
+  //       const current = this;
+  //       for (let i = 0; i < elem.length; i++) {
+  //         if (current !== elem[i]) {
+  //           elem[i].classList.remove('isActive');
+  //           elem[i].classList.add('notActive');
+  //         } else {
+  //           current.classList.add('isActive');
+  //           current.classList.remove('notActive');
+  //         }
+  //       }
+  //       e.preventDefault();
+  //     });
+  //   }
+  // }
+  // addClass(document.querySelectorAll('.link'));
+});
+AOS.init();

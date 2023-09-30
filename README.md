@@ -50,17 +50,17 @@ Bahasa pemrograman yang digunakan :
 ## Roadmap
 
 - [x] Pre-Test
-- [ ] Bootstrap
+- [x] Bootstrap
     - [x] Tugas Praktik # 1
     - [x] Tugas Praktik # 2
     - [x] Tugas Praktik # 3
-    - [ ] Tugas Praktik # 4
-    - [ ] Tugas Praktik # 5
-    - [ ] Tugas Praktik # 6
+    - [x] Tugas Praktik # 4
+    - [x] Tugas Praktik # 5
+    - [x] Tugas Praktik # 6
 - [ ] SASS
-    - [ ] Tugas Praktik # 7
-    - [ ] Tugas Praktik # 8
-    - [ ] Tugas Praktik # 9
+    - [x] Tugas Praktik # 7
+    - [x] Tugas Praktik # 8
+    - [x] Tugas Praktik # 9
     - [ ] Tugas Praktik # 10
     - [ ] Tugas Praktik # 11
     - [ ] Tugas Praktik # 12

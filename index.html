@@ -16,65 +16,114 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/css/style.css" />
 
+    <!-- CSS - SCSS -->
+    <!-- Footer -->
+    <link rel="stylesheet" href="style/css/footer.css" />
+    <!-- FAQ -->
+    <link rel="stylesheet" href="style/css/faq.css" />
+    <!-- Customize navbar bawah untuk mobile  -->
+    <link rel="stylesheet" href="style/css/style-navbawah.css" />
+
+    <!-- CSS - Import -->
     <!-- fancybox //Huda-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
 
   <body class="bg-image">
     <header>
       <!-- place navbar here -->
-      <nav class="navbar navbar-width fixed-top navbar-expand-md navbar-light bg-white shadow mt-4 rounded">
+
+      <!-- Navbar Atas -->
+      <nav class="navbar navbar-width fixed-top d-none d-md-block navbar-expand-lg navbar-light bg-white shadow mt-4 rounded">
         <div class="container-fluid">
+          <a href="#" class="navbar-brand d-md-block d-none d-lg-none"><img src="Assets/Navbar/navbar-logo.png" alt="logo.png" width="55px" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-4">
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav text-center mx-auto">
+              <li class="nav-item px-4">
                 <a class="nav-link" href="#home">Home</a>
               </li>
-              <li class="nav-item mx-4">
+              <li class="nav-item px-4">
                 <a class="nav-link" href="#about">About Us</a>
               </li>
-              <li class="nav-item mx-5">
+              <li class="nav-item mx-5 d-md-none d-lg-block">
                 <img class="" src="Assets/Navbar/navbar-logo.png" alt="logo.png" width="55px" />
               </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="#gallery">Gallery</a>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#galeri">Gallery</a>
               </li>
-              <li class="nav-item mx-4">
+              <li class="nav-item px-4">
                 <a class="nav-link" href="#treatment">Treatment</a>
               </li>
             </ul>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+      </nav>
+
+      <!-- Navbar Bawah -->
+      <nav class="navbawah navbar fixed-bottom navbar-expand d-sm-block d-md-none d-lg-none d-xl-none">
+        <ul class="list-unstyled navbar-nav nav-justified w-100 m-0 p-0">
+          <li>
+            <a href="#home" class="d-flex justify-content-center align-items-center link">
+              <i class="bi bi-house-door-fill" width="32" height="32"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="d-flex justify-content-center align-items-center link">
+              <i class="bi bi-info-circle-fill"></i>
+              <span>About Us</span>
+            </a>
+          </li>
+          <li>
+            <img class="img-fluid d-flex mx-auto" src="Assets/Navbar/navbar-logo.png" alt="logo.png" width="110" />
+          </li>
+          <li>
+            <a href="#galeri" class="d-flex justify-content-center align-items-center link">
+              <i class="bi bi-image"></i>
+              <span>Galeri</span>
+            </a>
+          </li>
+          <li>
+            <a href="#treatment" class="d-flex justify-content-center align-items-center link">
+              <i class="bi bi-heart-pulse-fill"></i>
+              <span>Treatment</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <!-- Whatsapp Floating -->
-      <a href="#" class="float" id="whatsApp">
-        <center>
-          <i class="bi bi-whatsapp"></i>
-        </center>
-      </a>
+      <div class="container-fluid d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <a href="#" class="float" id="whatsApp">
+          <center>
+            <i class="bi bi-whatsapp"></i>
+          </center>
+        </a>
+      </div>
+
+      <div class="container-fluid d-sm-block d-md-none d-lg-none d-xl-none">
+        <a href="#" class="float small" id="whatsAppMini">
+          <center>
+            <i class="bi bi-whatsapp"></i>
+          </center>
+        </a>
+      </div>
+
       <!-- Whatsapp Floating -->
 
       <!-- Home by Dewi -->
-      <div class="carousel-container" id="home">
+      <div class="carousel-container" id="home" data-aos="fade-bottom">
         <div class="container-sm mt-5 px-0 bg-color rounded shadow">
           <div id="carouselExampleControls" class="carousel slide text-dark" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -85,7 +134,7 @@
                 <img src="./Assets/Galeri/nails2.jpeg" alt="" srcset="" />
               </div>
               <div class="carousel-item">
-                <img src="/Assets/Galeri/nails3.jpeg" alt="" srcset="" />
+                <img src="./Assets/Galeri/nails3.jpeg" alt="" srcset="" />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -124,11 +173,22 @@
       <!-- Home by Dewi -->
 
       <!-- About Us -->
-      <div class="container-sm mt-5 py-4 px-4 bg-color rounded text-center" id="about">
+      <div class="container-sm mt-5 py-4 px-4 bg-color rounded text-center" id="about" data-aos="fade-right">
         <h1 class="txt-judul mb-4">About Us</h1>
-        <h2 class="milink">Milink Beauty</h2>
 
-        <section class="social-media">
+        <div class="rounded bg-color p-3 m-3 mt-0">
+          <h2 class="milink">Milink Beauty</h2>
+          <h4 class="deskripsi mb-4">
+            Kami adalah destinasi kecantikan yang eksklusif, didedikasikan untuk meningkatkan pesona alami Anda. Di Milink Beauty Salon, kami memahami bahwa kecantikan adalah ekspresi diri yang unik, dan itulah mengapa kami telah membangun
+            reputasi sebagai ahli dalam merawat alis, bulu mata, dan kuku Anda.
+          </h4>
+          <h4 class="deskripsi">
+            Bersama-sama, kami di Milink Beauty Salon berkomitmen untuk membantu Anda mengekspresikan kecantikan sejati Anda. Jadilah bagian dari pengalaman kecantikan yang unik ini dan nikmati sentuhan ahli kami yang akan membuat Anda
+            merasa lebih percaya diri dan cantik.
+          </h4>
+        </div>
+
+        <section class="container social-media">
           <div class="icon">
             <a href="https://www.instagram.com/mi_linkbeauty/" target="_blank">
               <h1><i class="bi bi-instagram"></i></h1>
@@ -149,7 +209,7 @@
         <div class="container-fluid mt-3 px-0 rounded shadow">
           <div class="map-responsive">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.600466845137!2d106.77859398103587!3d-6.109294899231453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dbeca5a6a07%3A0x3375ec4f3557e272!2sApartemen%20Green%20Bay%20Pluit%2C%20Tower%20A%20(Akasia)!5e1!3m2!1sid!2sid!4v1695450163978!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15868.47534751303!2d106.76964526321483!3d-6.11470031939962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dfad83a7e33%3A0x88f939e01339e687!2sMi_link%20beauty!5e0!3m2!1sid!2sid!4v1696029385577!5m2!1sid!2sid"
               width="600"
               height="450"
               frameborder="0"
@@ -165,7 +225,7 @@
       <!-- About Us -->
 
       <!-- Gallery by Huda -->
-      <div class="container" id="gallery">
+      <div class="container" id="galeri" data-aos="fade-bottom">
         <ul class="controls text-center py-3">
           <h1 class="txt-judul">Galeri</h1>
           <li class="px-3 filter active" data-filter="*">All</li>
@@ -174,67 +234,67 @@
           <li class="px-3 filter" data-filter=".eyebrow">Eyebrow</li>
         </ul>
 
-        <div class="gallery">
+        <div class="gallery" data-aos="fade-down-left">
           <div class="row d-flex flex-wrap justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails1.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails1.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails1.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails2.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails2.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails2.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash2.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash2.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash2.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails3.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails3.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails3.jpeg" />
               </a>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash1.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash1.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash1.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails4.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails4.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails4.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash3.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash3.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash3.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails5.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails5.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails5.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash4.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash4.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash4.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix nails">
               <a href="./Assets/Galeri/nails6.jpeg" data-fancybox="nail">
-                <img src="./Assets/Galeri/nails6.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/nails6.jpeg" />
               </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mix eyelash">
               <a href="./Assets/Galeri/eyelash5.jpeg" data-fancybox="eyelash">
-                <img src="./Assets/Galeri/eyelash5.jpeg" />
+                <img class="img-fluid img-thumbnail" src="./Assets/Galeri/eyelash5.jpeg" />
               </a>
             </div>
           </div>
@@ -243,7 +303,7 @@
       <!-- Gallery by Huda -->
 
       <!-- Pricelist and Treatment by Niko - Arti -->
-      <div class="container-sm mt-5 py-4 px-4 bg-color rounded" id="treatment">
+      <div class="container-sm mt-5 py-4 px-4 bg-color rounded" id="treatment" data-aos="fade-bottom">
         <h1 class="txt-judul mb-4 text-center">Treatment</h1>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -262,7 +322,8 @@
               </div>
               <div class="card-footer text-center">
                 <small class="text-body-secondary start">start from</small>
-                <h1 class="harga">Rp3.000,-</h1>
+                <h1 class="harga d-xl-block d-lg-block d-md-none d-sm-block">Rp3.000,-</h1>
+                <h3 class="harga d-xl-none d-lg-none d-md-block d-sm-none d-none">Rp3.000,-</h3>
               </div>
             </div>
           </div>
@@ -282,7 +343,8 @@
               </div>
               <div class="card-footer text-center">
                 <small class="text-body-secondary start">start from</small>
-                <h1 class="harga">Rp700.000,-</h1>
+                <h1 class="harga d-xl-block d-lg-block d-md-none d-sm-block">Rp700.000,-</h1>
+                <h3 class="harga d-xl-none d-lg-none d-md-block d-sm-none d-none">Rp700.000,-</h3>
               </div>
             </div>
           </div>
@@ -302,7 +364,8 @@
               </div>
               <div class="card-footer text-center">
                 <small class="text-body-secondary start">start from</small>
-                <h1 class="harga">Rp1.000.000,-</h1>
+                <h1 class="harga d-xl-block d-lg-block d-md-none d-sm-block">Rp1.000.000,-</h1>
+                <h3 class="harga d-xl-none d-lg-none d-md-block d-sm-none d-none">Rp1.000.000,-</h3>
               </div>
             </div>
           </div>
@@ -310,87 +373,183 @@
       </div>
       <!-- Pricelist and Treatment by Niko - Arti -->
       <!-- faq by HAWA -->
-      <div class="container-sm mt-5 py-4 px-4 bg-color rounded" id="faq">
-        <h1>FAQ - Beauty Services</h1>
+      <div class="container-sm mt-5 px-4 py-2 my-2 my-sm-5 bg-color rounded" id="faq" data-aos="flip-right">
+        <h1 class="m-3"><strong>FAQ - Beauty Services</strong></h1>
 
         <!-- FAQ for Eyelash -->
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apa itu eyelash extensions?</div>
-          <div class="answer">Eyelash extensions adalah prosedur di mana bulu mata palsu ditempelkan pada bulu mata asli Anda untuk memberikan tampilan yang lebih penuh dan panjang.</div>
-        </div>
+        <div class="accordion mb-3">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Apa itu eyelash extensions?</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Eyelash extensions adalah prosedur di mana bulu mata palsu ditempelkan pada bulu mata asli Anda untuk memberikan tampilan yang lebih penuh dan panjang</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Berapa lama hasil eyelash extensions dapat bertahan?</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+              <div class="accordion-body">Umumnya, eyelash extensions dapat bertahan antara 4 hingga 6 minggu, tergantung pada perawatan dan gaya yang dipilih.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Apakah eyelash extensions aman untuk bulu mata saya?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+              <div class="accordion-body">Eyelash extensions yang diterapkan dengan benar oleh teknisi berlisensi umumnya aman. Pastikan untuk mengikuti perawatan pasca-perawatan yang disarankan.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Apakah ada efek samping yang mungkin terjadi setelah eyelash extensions?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+              <div class="accordion-body">Beberapa orang mungkin mengalami iritasi atau alergi terhadap lem perekat yang digunakan dalam eyelash extensions. Ini adalah efek samping yang mungkin terjadi, tetapi relatif jarang.</div>
+            </div>
+          </div>
 
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Berapa lama hasil eyelash extensions dapat bertahan?</div>
-          <div class="answer">Umumnya, eyelash extensions dapat bertahan antara 4 hingga 6 minggu, tergantung pada perawatan dan gaya yang dipilih.</div>
-        </div>
+          <!-- FAQ for Nailcare -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Apa yang dimaksud dengan manicure dan pedicure?</button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+              <div class="accordion-body">Manicure adalah perawatan untuk kuku tangan, sedangkan pedicure adalah perawatan untuk kuku kaki. Keduanya mencakup pemotongan, perapian, dan pengecatan kuku.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Berapa lama biasanya sebuah manicure atau pedicure bertahan?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+              <div class="accordion-body">Hasil manicure dan pedicure dapat bertahan antara 1 hingga 2 minggu, tergantung pada jenis perawatan yang Anda pilih, seperti gel polish atau kutek biasa.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Apakah perawatan kuku berbahaya?</button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+              <div class="accordion-body">Perawatan kuku yang dilakukan oleh profesional yang berlisensi biasanya aman. Hindari mencoba melakukan perawatan sendiri yang kompleks, karena ini dapat menyebabkan cedera.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Apa manfaat perawatan kuku secara rutin?</button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
+              <div class="accordion-body">Perawatan kuku rutin dapat menjaga kesehatan dan penampilan kuku Anda, serta membantu mencegah masalah kuku seperti kuku yang rapuh atau kuku kaki yang tumbuh tidak normal.</div>
+            </div>
+          </div>
 
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apakah eyelash extensions aman untuk bulu mata saya?</div>
-          <div class="answer">Eyelash extensions yang diterapkan dengan benar oleh teknisi berlisensi umumnya aman. Pastikan untuk mengikuti perawatan pasca-perawatan yang disarankan.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apakah ada efek samping yang mungkin terjadi setelah eyelash extensions?</div>
-          <div class="answer">Beberapa orang mungkin mengalami iritasi atau alergi terhadap lem perekat yang digunakan dalam eyelash extensions. Ini adalah efek samping yang mungkin terjadi, tetapi relatif jarang.</div>
-        </div>
-
-        <!-- FAQ for Nailcare -->
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apa yang dimaksud dengan manicure dan pedicure?</div>
-          <div class="answer">Manicure adalah perawatan untuk kuku tangan, sedangkan pedicure adalah perawatan untuk kuku kaki. Keduanya mencakup pemotongan, perapian, dan pengecatan kuku.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Berapa lama biasanya sebuah manicure atau pedicure bertahan?</div>
-          <div class="answer">Hasil manicure dan pedicure dapat bertahan antara 1 hingga 2 minggu, tergantung pada jenis perawatan yang Anda pilih, seperti gel polish atau kutek biasa.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apakah perawatan kuku berbahaya?</div>
-          <div class="answer">Perawatan kuku yang dilakukan oleh profesional yang berlisensi biasanya aman. Hindari mencoba melakukan perawatan sendiri yang kompleks, karena ini dapat menyebabkan cedera.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apa manfaat perawatan kuku secara rutin?</div>
-          <div class="answer">Perawatan kuku rutin dapat menjaga kesehatan dan penampilan kuku Anda, serta membantu mencegah masalah kuku seperti kuku yang rapuh atau kuku kaki yang tumbuh tidak normal.</div>
-        </div>
-
-        <!-- FAQ for Eyebrow -->
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apa itu eyebrow shaping?</div>
-          <div class="answer">Eyebrow shaping adalah prosedur yang digunakan untuk merapikan dan membentuk alis agar sesuai dengan bentuk wajah Anda.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Berapa lama hasil eyebrow shaping dapat bertahan?</div>
-          <div class="answer">Hasil eyebrow shaping dapat bertahan antara 2 hingga 4 minggu, tergantung pada pertumbuhan alis Anda.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apa metode yang paling umum digunakan untuk eyebrow shaping?</div>
-          <div class="answer">Metode yang paling umum digunakan untuk eyebrow shaping adalah mencabut, waxing, threading, atau menggunakan teknik microblading.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="question" onclick="toggleAnswer(this)">Apakah eyebrow shaping menyakitkan?</div>
-          <div class="answer">Rasa sakit saat eyebrow shaping tergantung pada tingkat toleransi Anda terhadap nyeri. Beberapa orang mungkin merasakan sedikit ketidaknyamanan, tetapi ini bersifat sementara.</div>
+          <!-- FAQ for Eyebrow -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Apa itu eyebrow shaping?</button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
+              <div class="accordion-body">Eyebrow shaping adalah prosedur yang digunakan untuk merapikan dan membentuk alis agar sesuai dengan bentuk wajah Anda.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Berapa lama hasil eyebrow shaping dapat bertahan?</button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen">
+              <div class="accordion-body">Hasil eyebrow shaping dapat bertahan antara 2 hingga 4 minggu, tergantung pada pertumbuhan alis Anda.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                Apa metode yang paling umum digunakan untuk eyebrow shaping?
+              </button>
+            </h2>
+            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven">
+              <div class="accordion-body">Metode yang paling umum digunakan untuk eyebrow shaping adalah mencabut, waxing, threading, atau menggunakan teknik microblading.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">Apakah eyebrow shaping menyakitkan?</button>
+            </h2>
+            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve">
+              <div class="accordion-body">Rasa sakit saat eyebrow shaping tergantung pada tingkat toleransi Anda terhadap nyeri. Beberapa orang mungkin merasakan sedikit ketidaknyamanan, tetapi ini bersifat sementara.</div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
       <!-- Footer by Arti -->
-      <div class="container d-flex justify-content-center mt-4">
-        <div class="sosial mb-2">
-          <a href="https://wa.me/6281282160063" target="_blank"> <i class="bi bi-whatsapp"></i></a>
-
-          <a href="https://www.instagram.com/mi_linkbeauty/" target="_blank"> <i class="bi bi-instagram"></i></a>
-        </div>
-      </div>
       <!-- Copyright -->
-      <div class="text-center text-white py-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center text-white py-3 d-none d-sm-block d-md-none d-lg-none d-xl-none" style="background-color: rgba(0, 0, 0, 0.2)">
         ©2023 Copyright :
         <a class="text-white" href="#" style="text-decoration: none; font-weight: bold">Mi Link Beauty</a>
+      </div>
+      <!-- Copyright -->
+
+      <div class="container-fluid m-0 p-5 pb-0 d-sm-none d-md-block d-lg-block d-xl-block footer2">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column footer">
+              <p class="m-0">Product</p>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Treatment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Frequently Asked Questions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column footer">
+              <p class="m-0">Company</p>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column footer">
+              <p class="m-0">Contact & Support</p>
+              <li class="nav-item">
+                <span class="nav-link"
+                  ><a href="https://wa.me/6281282160063" target="_blank"> <i class="bi bi-whatsapp"></i> 081282160063</a></span
+                >
+              </li>
+              <li class="nav-item">
+                <span class="nav-link"
+                  ><a href="https://www.instagram.com/mi_linkbeauty/" target="_blank"> <i class="bi bi-instagram"></i> Mi Link Beauty</a></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+
+        <div class="text-center pb-2">
+          <span class="copyright quick-links">Copyright &copy; Mi Link Beauty</span>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </div>
+
+        <span class="space-bawah m-3 p-4 d-none d-sm-block d-md-none d-lg-none d-xl-none"></span>
       </div>
       <!-- /Copyright -->
       <!-- Footer by Arti -->
@@ -408,6 +567,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <!-- Library jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
