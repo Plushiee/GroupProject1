@@ -41,6 +41,12 @@ h1.harga {
   color: red;
 }
 
+h3.harga {
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+
 .container-sm {
   max-width: 85% !important;
 }
