@@ -125,3 +125,4 @@ $(document).ready(function () {
   // }
   // addClass(document.querySelectorAll('.link'));
 });
+AOS.init();
