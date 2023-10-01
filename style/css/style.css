@@ -16,12 +16,15 @@
   margin-right: auto;
 }
 
-.nav-item:hover {
+/* .nav-item:hover {
   background-color: rgb(236, 236, 236);
 }
 
 .nav-item:active {
   background-color: rgb(201, 201, 201);
+} */
+.navbar-nav .nav-item a.nav-link.active, .navbar-nav .nav-item a.nav-link:hover {
+  background-color: rgb(224, 223, 223);
 }
 
 .bg-color {
@@ -256,12 +259,13 @@ h5 {
   list-style: none;
   margin-left: 0px;
 }
-
+/* penambahan color */
 .controls li {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
+  color: #6c1874;
 }
 
 .controls li a {
@@ -272,21 +276,25 @@ h5 {
 .controls li a:hover {
   color: #000;
 }
-
+/* ubah warna */
 .controls li:hover {
-  border-bottom: 1px solid #e3ca66;
+  border-bottom: 1px solid #71088b;
+  color: #a725b3;
 }
-
+/* ubah warna */
 .controls li.active {
-  color: #e3ca66;
-  border-bottom: 2px solid #e3ca66;
+  color: #a725b3;
+  border-bottom: 2px solid #a725b3;
   padding: auto;
 }
 
 .controls li.active a {
   color: #e3ca66;
 }
-
+/*  */
+#galeri .controls h1{
+  margin-top: 50px;
+}
 /* akhir Css By Huda */
 
 /* awal css faq - Hawa */
@@ -334,4 +342,16 @@ h1 {
 
 .deskripsi {
   color: white;
+}
+
+/* logo */
+.navbar .container-fluid img{
+  cursor: pointer;
+}
+/* penambahan hover */
+.nav-item .nav-link a:hover, .nav-item .nav-link a:hover{
+  color: rgb(56, 56, 243);
+}
+.nav-item .nav-link i:hover{
+  color: rgb(6, 63, 184);
 }
