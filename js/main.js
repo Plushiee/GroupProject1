@@ -125,4 +125,15 @@ $(document).ready(function () {
   // }
   // addClass(document.querySelectorAll('.link'));
 });
+// class active nav
+window.addEventListener("hashchange", function() {
+  var currentHash = window.location.hash;
+
+  document.querySelectorAll(".navbar-nav .nav-item a.nav-link").forEach(function(link) {
+    link.classList.remove("active");
+  });
+
+  document.querySelector(".navbar-nav .nav-item a[href='" + currentHash + "']").classList.add("active");
+});
+
 AOS.init();
