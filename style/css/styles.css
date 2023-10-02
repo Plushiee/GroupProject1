@@ -1,0 +1,484 @@
+.bi {
+  font-size: 30px;
+  color: rgb(175, 18, 175);
+}
+
+.navbawah {
+  background-color: #fff;
+}
+.navbawah ul {
+  list-style-type: none;
+  padding: 20px;
+}
+.navbawah li {
+  display: inline-flex;
+  width: 50%;
+  margin-right: -4px;
+}
+.navbawah a {
+  height: 68px;
+  width: 100%;
+  text-decoration: none;
+  color: red;
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.navbawah a:hover i {
+  transition: all 0.4s;
+}
+.navbawah a i {
+  position: absolute;
+  z-index: 3;
+}
+.navbawah a i:after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  transform: rotate(20deg);
+  right: -5px;
+  bottom: 0;
+  left: -5px;
+  height: 3px;
+  z-index: 4;
+}
+.navbawah a span {
+  color: #841a92;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1;
+  transform: translateY(20px);
+  position: relative;
+}
+.navbawah a span:first-letter {
+  text-transform: capitalize;
+}
+.navbawah a span:after {
+  content: "";
+  background-color: #841a92;
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: flex;
+  left: calc(50% - 2.5px);
+  top: 25px;
+  transform: scale();
+  opacity: 0;
+}
+.navbawah a:after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  transform: rotate(15deg);
+  right: -2px;
+  bottom: -14px;
+  left: -8px;
+  height: 40px;
+  z-index: 2;
+}
+.navbawah a.isActive i {
+  transform: translateY(-40px);
+  transition: all 0.8s;
+}
+.navbawah a.isActive i:after {
+  transition: all 0.6s;
+  height: 32px;
+}
+.navbawah a.isActive span {
+  transform: translateY(0);
+  transition: all 0.4s ease-in;
+}
+.navbawah a.isActive span:after {
+  transition: all 0.8s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+.navbawah a.isActive:after {
+  height: 10px;
+  transition: height 1s;
+}
+.navbawah a.notActive i {
+  transform: translateY(0);
+  transition: all 0.8s;
+}
+.navbawah a.notActive i:after {
+  transition: all 0.6s;
+  height: 1px;
+}
+.navbawah a.notActive span {
+  transform: translateY(20px);
+  transition: all 0.4s ease-in;
+}
+.navbawah a.notActive span:after {
+  transition: all 0.8s ease;
+  transform: scale(0);
+  opacity: 1;
+}
+.navbawah a.notActive:after {
+  height: 50px;
+  transition: height 1s;
+}
+.navbawah .material-icons-outlined {
+  color: #7986cb;
+  font-size: 32px;
+}
+
+.accordion {
+  --bs-accordion-active-bg: #b972cc;
+  --bs-accordion-active-color: rgb(255, 255, 255);
+}
+.accordion .accordion-item {
+  --bs-accordion-border-color: rgb(203, 203, 203);
+}
+.accordion .accordion-header button.accordion-button {
+  font-weight: bold;
+}
+.accordion .accordion-header button.accordion-button:active {
+  background-color: #b972cc;
+  --bs-accordion-border-color: rgb(203, 203, 203);
+}
+.accordion .accordion-button.collapsed {
+  background: white;
+}
+
+.footer2 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul.footer {
+  font-size: 20px;
+  font-weight: bold;
+}
+ul.footer li a {
+  font-weight: normal;
+  color: white;
+}
+ul.footer li span a {
+  text-decoration: none;
+}
+ul.footer li.nav-item:hover {
+  background-color: transparent;
+}
+ul.footer li.nav-item:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+ul.footer .copyright {
+  font-weight: bold;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #333;
+    /* Warna awal teks */
+    background-color: #fff;
+    /* Warna awal latar belakang */
+  }
+  50% {
+    color: #f00;
+    background-color: #333;
+  }
+  100% {
+    color: #fff;
+    background-color: #00f;
+  }
+}
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 100%;
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff 10%, #eeafff 30%, #e78cff 100%);
+}
+
+.navbar-width {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-nav .nav-item a.nav-link.active {
+  background-color: rgb(224, 223, 223);
+}
+.navbar-nav .nav-item a.nav-link:hover {
+  background-color: rgb(224, 223, 223);
+}
+
+.bg-color {
+  background-color: rgba(39, 34, 34, 0.18);
+}
+
+.bi {
+  font-size: 30px;
+  color: rgb(175, 18, 175);
+}
+
+h1.txt-judul {
+  font-family: "Josefin Sans";
+  font-weight: bolder;
+  font-size: 80px;
+  color: white;
+}
+
+h1.harga {
+  font-size: xx-large;
+  font-weight: bold;
+  color: red;
+}
+
+h3.harga {
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+
+.container-sm {
+  max-width: 85% !important;
+}
+
+.borderless {
+  border: none;
+  font-family: "Josefin Sans";
+  font-size: 19px;
+}
+
+small.start {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+h5 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.carousel .carousel-item {
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  min-height: 100%;
+  min-width: 100%;
+  text-align: center;
+}
+
+.milink {
+  font-family: "Jim Nightshade";
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.float {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  padding-top: 8px;
+  padding-left: 2px;
+}
+.float i:hover {
+  color: #555;
+}
+.float .i {
+  font-size: 40px;
+}
+
+.float.small {
+  padding-top: 0px;
+  width: 50px;
+  height: 50px;
+  bottom: 110px;
+  right: 15px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.sosial i {
+  font-size: 50px;
+  color: white;
+  margin: 5px;
+}
+.sosial i:hover {
+  color: #bf67a6;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+.icon i {
+  font-size: 46px;
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.icon i:hover {
+  color: #555;
+}
+.icon p {
+  font-size: 20px;
+}
+
+.address {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated-text-bg {
+  animation: colorChange 5s infinite;
+}
+
+.mix img {
+  cursor: pointer;
+  filter: url(controls.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  transition: 0.9s;
+}
+.mix img:hover {
+  filter: none;
+}
+
+.controls {
+  width: 100%;
+}
+.controls ul {
+  list-style: none;
+  margin-left: 0px;
+}
+.controls li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #6c1874;
+}
+.controls li a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+.controls li a:hover {
+  color: #000;
+}
+.controls li:hover {
+  border-bottom: 1px solid #71088b;
+  color: #a725b3;
+}
+.controls li.active {
+  color: #a725b3;
+  border-bottom: 2px solid #a725b3;
+  padding: auto;
+}
+.controls li.active a {
+  color: #e3ca66;
+}
+
+#galeri .controls h1 {
+  margin-top: 50px;
+}
+
+#faq {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: backgroundScroll 20s linear infinite alternate;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+}
+
+.answer.active {
+  display: block;
+}
+
+.deskripsi {
+  color: white;
+}
+
+.navbar .container-fluid img {
+  cursor: pointer;
+}
+
+.nav-item .nav-link a:hover {
+  color: rgb(56, 56, 243);
+  color: rgb(56, 56, 243);
+}
+.nav-item .nav-link i:hover {
+  color: rgb(6, 63, 184);
+}
+
+/*# sourceMappingURL=styles.css.map */

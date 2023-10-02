@@ -14,15 +14,6 @@ $nav-link-text-mask-z-index: 2;
 $nav-icon-z-index: 3;
 $nav-icon-mask-z-index: 4;
 
-/*
-  -- Colors
-  */
-
-$body-background-color: #fff;
-$container-background-color: #3f51b5;
-$nav-background-color: #fff;
-$nav-icon-color: #7986cb;
-$nav-link-text-color: #841a92;
 .bi {
   font-size: 30px;
   color: rgb(175, 18, 175);
@@ -39,8 +30,6 @@ $nav-link-text-color: #841a92;
   li {
     display: inline-flex;
     width: $nav-list-item-width;
-    // background-color: red
-    //remove li spacing
     margin-right: -4px;
   }
 
