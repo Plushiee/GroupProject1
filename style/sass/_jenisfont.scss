@@ -2,3 +2,17 @@ $font-family_1: 'Josefin Sans';
 $font-family_2: 'Poppins';
 $font-family_3: 'Jim Nightshade';
 $font-family_4: Arial, sans-serif;
+
+$font-normal : normal;
+$font-bold : bold;
+
+$font-alligntment : (
+    'start'  : start,
+    'center' : center,
+    'end'    : end,
+    'justify': justify,
+);
+
+@function change-aligntment($map, $key) {
+    @return map-get($map, $key);
+}

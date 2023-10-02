@@ -3,6 +3,7 @@
 @import 'style-navbawah';
 @import 'faq';
 @import 'footer';
+
 @keyframes colorChange {
   0% {
     color: #333;
@@ -46,6 +47,30 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.keterangan-maps {
+  text-align: change-aligntment($font-alligntment, 'start');
+  background-color: $background-color_1;
+  
+  p {
+    text-align: change-aligntment($font-alligntment, 'start');
+  }
+
+  .alamat {
+    text-align: change-aligntment($font-alligntment, 'justify');
+  }
+
+  h1 {
+    text-align: change-aligntment($font-alligntment, 'start');
+    font-size: 15px;
+  }
+
+  .height {
+    height : 50px;
+  }
+  
+}
+
 .navbar-nav {
   .nav-item {
     a.nav-link.active {

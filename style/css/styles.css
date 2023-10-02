@@ -210,6 +210,24 @@ ul.footer .copyright {
   margin-right: auto;
 }
 
+.keterangan-maps {
+  text-align: start;
+  background-color: #ffffff;
+}
+.keterangan-maps p {
+  text-align: start;
+}
+.keterangan-maps .alamat {
+  text-align: justify;
+}
+.keterangan-maps h1 {
+  text-align: start;
+  font-size: 15px;
+}
+.keterangan-maps .height {
+  height: 50px;
+}
+
 .navbar-nav .nav-item a.nav-link.active {
   background-color: rgb(224, 223, 223);
 }
