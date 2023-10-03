@@ -61,8 +61,8 @@ Bahasa pemrograman yang digunakan :
     - [x] Tugas Praktik # 7
     - [x] Tugas Praktik # 8
     - [x] Tugas Praktik # 9
-    - [ ] Tugas Praktik # 10
-    - [ ] Tugas Praktik # 11
+    - [x] Tugas Praktik # 10
+    - [x] Tugas Praktik # 11
     - [ ] Tugas Praktik # 12
 - [ ] Tugas Akhir
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
