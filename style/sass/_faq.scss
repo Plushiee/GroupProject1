@@ -7,9 +7,11 @@
 }
 
 $background-color: (
-    'white': rgb(255, 255, 255),
+    'white' : rgb(255, 255, 255),
     'main' : #b972cc,
+    'dk-main' : #8d4c9f,
     'grey' : rgb(203, 203, 203),
+    'lg-grey' : rgb(248, 248, 248),
 );
 
 $text: (
@@ -20,9 +22,35 @@ $text: (
 $font-weight : normal;
 
 .accordion {
-    --bs-accordion-active-bg: #{change-background($background-color, 'main')};
-    --bs-accordion-active-color: #{change-color($text, 'clicked')};
+
+    // loop dan percabangan untuk warna accordion
+    @for $i from 1 through 12 {
+        @if $i % 2==0 {
+            .btn-#{$i}.collapsed {
+                background-color: #{change-background($background-color, 'lg-grey')};
+
+                &:active {
+                    background-color: #{change-background($background-color, 'main')};
+                    color: #{change-color($text, 'clicked')};
+                }
+            }
+        }
+
+        @else {
+            .btn-#{$i}.collapsed {
+                background-color: #{change-background($background-color, 'white')};
+
+                &:active {
+                    background-color: #{change-background($background-color, 'main')};
+                    color: #{change-color($text, 'clicked')};
+                }
+            }
+        }
+    }
+
     $font-weight : bold !global;
+    --bs-accordion-active-color: #{change-color($text, 'clicked')};
+    --bs-accordion-active-bg: #{change-background($background-color, 'main')};
 
     .accordion-item {
         --bs-accordion-border-color: #{change-color($background-color, 'grey')};
@@ -34,12 +62,12 @@ $font-weight : normal;
             font-weight: $font-weight;
 
             &:active {
-                background-color: change-background($background-color, 'main');
                 --bs-accordion-border-color: #{change-background($background-color, 'grey')};
+            }
+
+            &:focus {
+                box-shadow: 0 0 5px #{change-background($background-color, 'dk-main')};
             }
         }
     }
-    .accordion-button.collapsed {
-        background: white
-      }
 }

@@ -126,8 +126,92 @@
 }
 
 .accordion {
-  --bs-accordion-active-bg: #b972cc;
   --bs-accordion-active-color: rgb(255, 255, 255);
+  --bs-accordion-active-bg: #b972cc;
+}
+.accordion .btn-1.collapsed {
+  background-color: rgb(255, 255, 255);
+}
+.accordion .btn-1.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-2.collapsed {
+  background-color: rgb(248, 248, 248);
+}
+.accordion .btn-2.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-3.collapsed {
+  background-color: rgb(255, 255, 255);
+}
+.accordion .btn-3.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-4.collapsed {
+  background-color: rgb(248, 248, 248);
+}
+.accordion .btn-4.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-5.collapsed {
+  background-color: rgb(255, 255, 255);
+}
+.accordion .btn-5.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-6.collapsed {
+  background-color: rgb(248, 248, 248);
+}
+.accordion .btn-6.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-7.collapsed {
+  background-color: rgb(255, 255, 255);
+}
+.accordion .btn-7.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-8.collapsed {
+  background-color: rgb(248, 248, 248);
+}
+.accordion .btn-8.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-9.collapsed {
+  background-color: rgb(255, 255, 255);
+}
+.accordion .btn-9.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-10.collapsed {
+  background-color: rgb(248, 248, 248);
+}
+.accordion .btn-10.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-11.collapsed {
+  background-color: rgb(255, 255, 255);
+}
+.accordion .btn-11.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
+}
+.accordion .btn-12.collapsed {
+  background-color: rgb(248, 248, 248);
+}
+.accordion .btn-12.collapsed:active {
+  background-color: #b972cc;
+  color: rgb(255, 255, 255);
 }
 .accordion .accordion-item {
   --bs-accordion-border-color: rgb(203, 203, 203);
@@ -136,11 +220,10 @@
   font-weight: bold;
 }
 .accordion .accordion-header button.accordion-button:active {
-  background-color: #b972cc;
   --bs-accordion-border-color: rgb(203, 203, 203);
 }
-.accordion .accordion-button.collapsed {
-  background: white;
+.accordion .accordion-header button.accordion-button:focus {
+  box-shadow: 0 0 5px #8d4c9f;
 }
 
 .footer2 {
@@ -192,6 +275,11 @@ ul.footer .copyright {
     background-position: 100% 0;
   }
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -223,6 +311,10 @@ ul.footer .copyright {
 .keterangan-maps h1 {
   text-align: start;
   font-size: 15px;
+}
+.keterangan-maps .none {
+  text-decoration: none;
+  font-weight: normal;
 }
 .keterangan-maps .height {
   height: 50px;

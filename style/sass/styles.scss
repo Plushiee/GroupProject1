@@ -32,16 +32,23 @@
   }
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .bg-image {
   height: 100%;
   background-color: $background-color_1;
   background-image: linear-gradient(#ffffff 10%, #eeafff 30%, #e78cff 100%);
 }
+
 .navbar-width {
   width: 75%;
   margin-left: auto;
@@ -63,6 +70,11 @@
   h1 {
     text-align: change-aligntment($font-alligntment, 'start');
     font-size: 15px;
+  }
+  
+  .none {
+    text-decoration: none;
+    font-weight: $font-normal;
   }
 
   .height {
