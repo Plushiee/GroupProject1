@@ -32,7 +32,8 @@
   }
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -58,7 +59,7 @@ html, body {
 .keterangan-maps {
   text-align: change-aligntment($font-alligntment, 'start');
   background-color: $background-color_1;
-  
+
   p {
     text-align: change-aligntment($font-alligntment, 'start');
   }
@@ -71,16 +72,15 @@ html, body {
     text-align: change-aligntment($font-alligntment, 'start');
     font-size: 15px;
   }
-  
+
   .none {
     text-decoration: none;
     font-weight: $font-normal;
   }
 
   .height {
-    height : 50px;
+    height: 50px;
   }
-  
 }
 
 .navbar-nav {
@@ -249,6 +249,29 @@ h5 {
 .animated-text-bg {
   animation: colorChange 5s infinite;
 }
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  //   top: 50%;
+  left: 50%;
+  bottom: 2%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(117, 55, 199, 0.9);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+
 .mix {
   img {
     cursor: pointer;
@@ -258,9 +281,11 @@ h5 {
     transition: 0.9s;
     &:hover {
       filter: none;
+      scale: 110%;
     }
   }
 }
+
 .controls {
   width: 100%;
   ul {

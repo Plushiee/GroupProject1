@@ -275,7 +275,8 @@ ul.footer .copyright {
     background-position: 100% 0;
   }
 }
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -493,6 +494,29 @@ h5 {
   animation: colorChange 5s infinite;
 }
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(117, 55, 199, 0.9);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+
 .mix img {
   cursor: pointer;
   filter: url(controls.svg#grayscale);
@@ -502,6 +526,7 @@ h5 {
 }
 .mix img:hover {
   filter: none;
+  scale: 110%;
 }
 
 .controls {
