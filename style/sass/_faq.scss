@@ -49,6 +49,7 @@ $font-weight : normal;
     }
 
     $font-weight : bold !global;
+    // bootstrap style
     --bs-accordion-active-color: #{change-color($text, 'clicked')};
     --bs-accordion-active-bg: #{change-background($background-color, 'main')};
 
@@ -62,6 +63,7 @@ $font-weight : normal;
             font-weight: $font-weight;
 
             &:active {
+                // bootstrap style
                 --bs-accordion-border-color: #{change-background($background-color, 'grey')};
             }
 
