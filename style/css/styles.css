@@ -505,7 +505,7 @@ h5 {
   bottom: 2%;
   width: 100%;
   transform: translate(-50%, -50%);
-  background-color: rgba(117, 55, 199, 0.9);
+  background-color: rgba(117, 55, 199, 0.5);
   color: white;
   padding: 5px;
   text-align: center;
