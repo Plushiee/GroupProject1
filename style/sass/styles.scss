@@ -83,15 +83,23 @@ body {
   }
 }
 
-.navbar-nav {
-  .nav-item {
-    a.nav-link.active {
-      background-color: $background-color_2;
+.fixed-top {
+  li a {
+    border: 2px solid $color_1;
+    color: $color_4;
+    border-radius: 25px;
+    // background-color: red;
+    &:hover {
+      color: $color_9;
+      border-left: 2px solid #71088b;
     }
-    a.nav-link {
-      &:hover {
-        background-color: $background-color_2;
-      }
+  }
+  li .active {
+    font-weight: 500;
+    color: #71088b !important;
+    border-bottom: 1px solid #a725b3;
+    padding: auto;
+    a {
     }
   }
 }
@@ -390,7 +398,6 @@ h1 {
   .nav-link {
     a {
       &:hover {
-        color: $color_12;
         color: $color_12;
       }
     }
